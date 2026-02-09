@@ -263,7 +263,7 @@ img {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  touch-action: pan-x;
+  touch-action: auto;
   scrollbar-width: none;
   padding: 12px 0;
 }
@@ -796,7 +796,7 @@ section#skills {
 
   .works-viewport {
     padding: 8px 12px 16px;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
     scroll-padding: 0 24px;
   }
 
