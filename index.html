@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | YAMAGUCHI AOI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="トップへ">
+          <img
+            class="brand-logo"
+            src="assets/img/logo-PC.webp"
+            alt="Aoi Yamaguchi"
+            width="96"
+            height="76"
+          />
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="主要ナビゲーション">
+          <a class="nav-link" href="#works">制作実績</a>
+          <a class="nav-link" href="#about">私について</a>
+          <a class="nav-link" href="#skills">スキル＆ツール</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="トップ">
+        <div class="hero-bg" role="img" aria-label="トップビジュアル"></div>
+        <div class="container hero-inner">
+          <h1 class="hero-title">
+            <span class="hero-title-shadow">
+              <span class="hero-title-line"
+                >価値が<span class="hero-title-small">伝わる</span></span
+              >
+              <span class="hero-title-line hero-title-large">構成</span>
+              <span class="hero-title-line hero-title-small">と</span>
+              <span class="hero-title-line"
+                >読<span class="hero-title-small">みやすい</span></span
+              >
+              <span class="hero-title-line hero-title-large"
+                >デザイン<span class="hero-title-small">を。</span></span
+              >
+            </span>
+            <span class="hero-title-main">
+              <span class="hero-title-line"
+                >価値が<span class="hero-title-small">伝わる</span></span
+              >
+              <span class="hero-title-line hero-title-large">構成</span>
+              <span class="hero-title-line hero-title-small">と</span>
+              <span class="hero-title-line"
+                >読<span class="hero-title-small">みやすい</span></span
+              >
+              <span class="hero-title-line hero-title-large"
+                >デザイン<span class="hero-title-small">を。</span></span
+              >
+            </span>
+          </h1>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-bar">
+          <div class="container">
+            <h2 class="section-bar-title">About me 私について</h2>
+          </div>
+        </div>
+
+        <div class="container section-body about">
+          <div class="about-media">
+            <img
+              class="about-photo"
+              src="assets/img/aboutme.webp"
+              alt="プロフィール写真"
+              width="360"
+              height="371"
+            />
+          </div>
+          <div class="about-content">
+            <p class="about-name-en">YAMAGUCHI AOI</p>
+            <p class="about-name-ja">山口　碧</p>
+            <div class="about-text">
+              <p>
+                1996年生まれ。<br />
+                中京大学卒業後、ドラッグストアに入社し、店舗スタッフから店長として店舗運営に携わってきました。<br />
+                売場づくりや陳列レイアウトの工夫によって、お客様の動線や商品への注目度が変わることを実感し、
+                「伝え方」や「見せ方」が人の行動に与える影響に魅力を感じるようになりました。<br />
+                この経験をきっかけにWebの分野に興味を持ち、Webデザイナーへの転身を決意。<br />
+                株式会社ESACREATへ入社後は、HTML / CSS /
+                JavaScriptを中心に学習し、デザインと実装の両面からWeb制作に取り組んでいます。<br />
+                現場経験で培った視点を活かしユーザーやクライアントの目的に寄り添った制作を大切にしています。<br />
+                「価値が正しく伝わる構成」と「読みやすく、迷わないデザイン」を軸に、<br />
+                デザインと機能性の両立を意識したWebデザインを追求しています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="works" class="section works">
+        <div class="section-bar">
+          <div class="container">
+            <h2 class="section-bar-title">Works 制作実績</h2>
+          </div>
+        </div>
+
+        <div class="works-area">
+          <div class="container works-inner">
+            <button
+              class="works-arrow works-arrow--left"
+              type="button"
+              aria-label="前へ"
+            >
+              <span aria-hidden="true">‹</span>
+            </button>
+
+            <div
+              class="works-viewport"
+              tabindex="0"
+              aria-label="制作実績一覧（横スクロール）"
+            >
+              <div class="works-track">
+                <article class="work-card">
+                  <img
+                    class="work-thumb"
+                    src="assets/img/works1.webp"
+                    alt="地域密着型工務店のBtoB向けコーポレートサイトのデザイン制作"
+                  />
+                  <div class="work-content">
+                    <p class="work-type">Webサイト</p>
+                    <h3 class="work-title">
+                      地域密着型工務店のBtoB向けコーポレートサイトのデザイン制作
+                    </h3>
+                    <p class="work-description">
+                      新築住宅の購入・リフォームを考えている30～50代の家庭を持つ夫婦をターゲットに新規顧客獲得・信頼性向上・問い合わせの促進を目的としたコーポレートサイトのデザイン。問い合わせの促進のため、サービス内容やFAQなど、ユーザーが抱くであろう疑問を先回りして解決する情報設計。
+                    </p>
+                    <ul class="work-labels">
+                      <li>ワイヤーフレーム</li>
+                      <li>PCデザイン</li>
+                      <li>SPデザイン</li>
+                    </ul>
+                    <a href="作品詳細1.html" class="work-button">詳細を見る</a>
+                  </div>
+                </article>
+
+                <article class="work-card">
+                  <img
+                    class="work-thumb"
+                    src="assets/img/works2.webp"
+                    alt="総合キャリア支援プログラムLPデザイン制作"
+                  />
+                  <div class="work-content">
+                    <p class="work-type">Webサイト</p>
+                    <h3 class="work-title">
+                      総合キャリア支援プログラムLPデザイン制作
+                    </h3>
+                    <p class="work-description">
+                      転職やキャリアアップを目指している20～40代の男女をターゲットに忙しい人でも学べる柔軟な学習スタイルの総合キャリア支援プログラムの受講生募集を目的としたLPデザイン。無料体験の申し込みをゴールとし、ユーザーの疑問が解決する主要なセクションの直後にCTAを配置し、離脱を防ぐ導線を設計。
+                    </p>
+                    <ul class="work-labels">
+                      <li>ワイヤーフレーム</li>
+                      <li>PCデザイン</li>
+                      <li>SPデザイン</li>
+                    </ul>
+                    <a href="作品詳細2.html" class="work-button">詳細を見る</a>
+                  </div>
+                </article>
+
+                <article class="work-card">
+                  <img
+                    class="work-thumb"
+                    src="assets/img/works3.webp"
+                    alt="物流会社のBtoB向けコーポレートサイトのデザイン制作"
+                  />
+                  <div class="work-content">
+                    <p class="work-type">Webサイト</p>
+                    <h3 class="work-title">
+                      物流会社のBtoB向けコーポレートサイトのデザイン制作
+                    </h3>
+                    <p class="work-description">
+                      既存の物流に課題がある・新たな配送手段を検討している中小〜大手企業の物流・調達担当者をターゲットにBtoBの新規顧客獲得を目的としたコーポレートサイトのデザイン。「迅速かつ正確な配送」という強みが、ビジュアルやアイコン、ページ遷移の構造から感じられるよう、スピード感のあるキービジュアルの選定と情報設計。
+                    </p>
+                    <ul class="work-labels">
+                      <li>ワイヤーフレーム</li>
+                      <li>PCデザイン</li>
+                      <li>SPデザイン</li>
+                    </ul>
+                    <a href="作品詳細3.html" class="work-button">詳細を見る</a>
+                  </div>
+                </article>
+
+                <article class="work-card">
+                  <img
+                    class="work-thumb"
+                    src="assets/img/works4.webp"
+                    alt="プログラミングスクールLPデザイン制作"
+                  />
+                  <div class="work-content">
+                    <p class="work-type">Webサイト</p>
+                    <h3 class="work-title">
+                      プログラミングスクールLPデザイン制作
+                    </h3>
+                    <p class="work-description">
+                      大学生・20代社会人キャリアチェンジをターゲットとしたプログラミングスクールのLPデザイン。未来を感じさせる配色と、文字数を削減し視覚で訴求する構成。一貫したCTAを設計。
+                    </p>
+                    <ul class="work-labels">
+                      <li>ワイヤーフレーム</li>
+                      <li>PCデザイン</li>
+                    </ul>
+                    <a href="作品詳細4.html" class="work-button">詳細を見る</a>
+                  </div>
+                </article>
+
+                <article class="work-card">
+                  <img
+                    class="work-thumb"
+                    src="assets/img/works5.webp"
+                    alt="コーポレートサイトデザイン改修"
+                  />
+                  <div class="work-content">
+                    <p class="work-type">Webサイト</p>
+                    <h3 class="work-title">コーポレートサイトデザイン改修</h3>
+                    <p class="work-description">
+                      既存のコーポレートサイトのリニューアルデザインの作成。figumaを利用して既存のデザインを引き継ぎつつ提供された情報をもとに新規実装エリアをデザイン。
+                    </p>
+                    <ul class="work-labels">
+                      <li>PCデザイン</li>
+                      <li>SPデザイン</li>
+                      <li>バナー作成</li>
+                    </ul>
+                    <a href="作品詳細5.html" class="work-button">詳細を見る</a>
+                  </div>
+                </article>
+
+                  <article class="work-card">
+                    <img
+                      class="work-thumb"
+                      src="assets/img/works6.webp"
+                      alt="フットサルチーム試合告知POP制作"
+                    />
+                  <div class="work-content">
+                    <p class="work-type">POP作成</p>
+                    <h3 class="work-title">フットサルチーム試合告知POP制作</h3>
+                    <p class="work-description">
+                      群馬県のフットサルチーム「デルミリオーレ群馬」の毎月の試合告知POPの作成。Photoshopを利用して提供素材の切り抜きや明るさ色味調整、figumaでの配置調整、テキスト変更などを行い試合日時や会場などの情報を告知。
+                    </p>
+                    <ul class="work-labels">
+                      <li>POP作成</li>
+                    </ul>
+                      <a href="作品詳細6.html" class="work-button">詳細を見る</a>
+                    </div>
+                  </article>
+
+                  <article class="work-card">
+                    <img
+                      class="work-thumb"
+                      src="assets/img/works7.webp"
+                      alt="IT点呼キーパー Webコーディング"
+                    />
+                    <div class="work-content">
+                      <p class="work-type">Webサイト</p>
+                      <h3 class="work-title">IT点呼キーパー Webコーディング</h3>
+                      <p class="work-description">
+                        IT点呼キーパーWebサイトのデザインカンプをもとに、レスポンシブ対応のWebコーディングを行い、使いやすく魅力的なサイトを構築。
+                      </p>
+                      <ul class="work-labels">
+                        <li>コーディング</li>
+                        <li>レスポンシブ</li>
+                        <li>HTML/CSS</li>
+                      </ul>
+                      <a href="作品詳細7.html" class="work-button">詳細を見る</a>
+                    </div>
+                  </article>
+
+                  <article class="work-card">
+                    <img
+                      class="work-thumb"
+                      src="assets/img/works8.webp"
+                      alt="Blue Shoes Webコーディング"
+                    />
+                    <div class="work-content">
+                      <p class="work-type">Webサイト</p>
+                      <h3 class="work-title">Blue Shoes Webコーディング</h3>
+                      <p class="work-description">
+                        Blue Shoes Webサイトのデザインカンプをもとに、レスポンシブ対応のWebコーディングを行い、使いやすく魅力的なサイトを構築。
+                      </p>
+                      <ul class="work-labels">
+                        <li>コーディング</li>
+                        <li>レスポンシブ</li>
+                        <li>HTML/CSS</li>
+                      </ul>
+                      <a href="作品詳細8.html" class="work-button">詳細を見る</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+            <button
+              class="works-arrow works-arrow--right"
+              type="button"
+              aria-label="次へ"
+            >
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-bar">
+          <div class="container">
+            <h2 class="section-bar-title">Skill&amp;Tools</h2>
+          </div>
+        </div>
+        <div class="container section-body">
+          <div class="skill-design-row">
+            <div class="skill-design-image-container">
+              <img
+                src="assets/img/skills1.webp"
+                alt="デザインイメージ"
+                class="skill-design-image"
+              />
+            </div>
+
+            <div class="skill-design-content">
+              <div class="label-card">
+                <p class="label-card-text">Design</p>
+              </div>
+
+              <div class="skill-design-icons">
+                <img src="assets/img/figma.webp" alt="Figma" />
+                <img src="assets/img/photoshop.webp" alt="Photoshop" />
+                <img src="assets/img/illustrator.webp" alt="Illustrator" />
+                <img src="assets/img/keynote.webp" alt="その他デザインツール" />
+              </div>
+            </div>
+          </div>
+
+          <article class="tool-row">
+            <img class="tool-image" src="assets/img/skills2.webp" alt="Figma" />
+            <div class="tool-content">
+              <h3 class="tool-title">Figma</h3>
+              <div class="tool-rule"></div>
+              <p class="tool-text">
+                Figmaを使用して、Webサイトやバナーのデザインを制作しています。
+                ワイヤーフレームやプロトタイプを作成し、実装のしやすさを意識した設計を心がけています。
+                <br /><br />
+                パーツやコンポーネントを整理することで、全体の統一感を保ちつつ、修正や運用がしやすい構造に整えています。また、ボタン配置や余白、フォントのサイズ感など、ユーザーの視認性や操作性にも配慮したUIデザインも行っています
+              </p>
+
+              <p class="tool-meta">経験年数：1年</p>
+            </div>
+          </article>
+
+          <article class="tool-row">
+            <img
+              class="tool-image"
+              src="assets/img/skills3.webp"
+              alt="Photoshop / Illustrator"
+            />
+            <div class="tool-content">
+              <h3 class="tool-title">Photoshop / Illustrator</h3>
+              <div class="tool-rule"></div>
+              <p class="tool-text">
+                提供素材の調整や切り抜きなど、Photoshopを使用して画像加工やレタッチを行っています。
+                <br />Illustratorを用いた文字組みや図形制作にも対応可能です。
+                <br /><br />
+                視線を引きつけ、訴求内容がひと目で伝わるよう、配色・文字サイズ・余白のバランスまで丁寧に調整しています。目的やターゲットに応じて、複数パターンのデザイン提案を行うこともあります。
+              </p>
+              <p class="tool-meta">経験年数：1年</p>
+            </div>
+          </article>
+
+          <div class="sub-bar">
+            <p class="sub-bar-title">Others</p>
+          </div>
+
+          <div class="others-grid">
+            <article class="other-card">
+              <div class="other-head">
+                <img
+                  class="other-icon-img"
+                  src="assets/img/slack.webp"
+                  alt="Slackアイコン"
+                  aria-hidden="true"
+                />
+
+                <div class="other-meta">
+                  <h3 class="other-title">Slack</h3>
+                  <span class="other-stars" aria-hidden="true">
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/starharf.webp" alt="" />
+                  </span>
+                  <div class="other-rule"></div>
+                </div>
+              </div>
+              <p class="other-text">
+                チーム内外のコミュニケーションツールとして使用。案件ごとのチャンネル運用、進行状況の共有、デザイナー・エンジニア間のやり取りを円滑に行っています。必要に応じて通知設計やスレッド活用を行い、情報の整理と伝達効率を意識しています。
+              </p>
+            </article>
+
+            <article class="other-card">
+              <div class="other-head">
+                <img
+                  class="other-icon-img"
+                  src="assets/img/vscode.webp"
+                  alt="Visual Studio Codeアイコン"
+                  aria-hidden="true"
+                />
+                <div class="other-meta">
+                  <h3 class="other-title">Visual Studio Code</h3>
+                  <span class="other-stars" aria-hidden="true">
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/star.webp" alt="" />
+                  </span>
+                  <div class="other-rule"></div>
+                </div>
+              </div>
+              <p class="other-text">
+                HTML / CSS / JavaScript
+                のコーディングを中心に使用。拡張機能を活用した効率的な開発環境を構築し、保守性を意識したコード記述を行っています。デザインデータを正確に反映した実装を心がけています。
+              </p>
+            </article>
+            <article class="other-card">
+              <div class="other-head">
+                <img
+                  class="other-icon-img"
+                  src="assets/img/excel.webp"
+                  alt="Excelアイコン"
+                  aria-hidden="true"
+                />
+                <div class="other-meta">
+                  <h3 class="other-title">Excel</h3>
+                  <span class="other-stars" aria-hidden="true">
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/star.webp" alt="" />
+                  </span>
+                  <div class="other-rule"></div>
+                </div>
+              </div>
+              <p class="other-text">
+                MOS資格を取得しており、基本操作から関数・表作成まで一通り対応可能です。
+                実務で使用する機会は多くありませんが、必要に応じてデータ整理や管理表作成を問題なく行えます。
+              </p>
+            </article>
+            <article class="other-card">
+              <div class="other-head">
+                <img
+                  class="other-icon-img"
+                  src="assets/img/PowerPoint.webp"
+                  alt="PowerPointアイコン"
+                  aria-hidden="true"
+                />
+                <div class="other-meta">
+                  <h3 class="other-title">PowerPoint</h3>
+                  <span class="other-stars" aria-hidden="true">
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/star.webp" alt="" />
+                  </span>
+                  <div class="other-rule"></div>
+                </div>
+              </div>
+              <p class="other-text">
+                資料作成の基礎的な操作は可能で、情報整理やレイアウト調整にも対応できます。
+                使用頻度は高くありませんが、必要な場面では目的に沿った分かりやすい資料作成を意識しています。
+              </p>
+            </article>
+            <article class="other-card">
+              <div class="other-head">
+                <img
+                  class="other-icon-img"
+                  src="assets/img/HTML.webp"
+                  alt="HTMLアイコン"
+                  aria-hidden="true"
+                />
+                <div class="other-meta">
+                  <h3 class="other-title">HTML</h3>
+                  <span class="other-stars" aria-hidden="true">
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/star.webp" alt="" />
+                  </span>
+                  <div class="other-rule"></div>
+                </div>
+              </div>
+              <p class="other-text">
+                Webサイトのマークアップに使用。SEOやアクセシビリティを意識した構造設計を行い、デザイン意図を正確に反映したコーディングを心がけています。
+              </p>
+            </article>
+            <article class="other-card">
+              <div class="other-head">
+                <img
+                  class="other-icon-img"
+                  src="assets/img/CSS.webp"
+                  alt="CSSアイコン"
+                  aria-hidden="true"
+                />
+                <div class="other-meta">
+                  <h3 class="other-title">CSS</h3>
+                  <span class="other-stars" aria-hidden="true">
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/starharf.webp" alt="" />
+                  </span>
+                  <div class="other-rule"></div>
+                </div>
+              </div>
+              <p class="other-text">
+                レスポンシブ対応を含めたスタイリングに使用。レイアウト設計やアニメーション表現を通じて、見やすさと使いやすさを両立したUIを構築しています。
+              </p>
+            </article>
+            <article class="other-card">
+              <div class="other-head">
+                <img
+                  class="other-icon-img"
+                  src="assets/img/JS.webp"
+                  alt="JavaScriptアイコン"
+                  aria-hidden="true"
+                />
+                <div class="other-meta">
+                  <h3 class="other-title">JavaScript</h3>
+                  <span class="other-stars" aria-hidden="true">
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/starharf.webp" alt="" />
+                    <img src="assets/img/star0.webp" alt="" />
+                  </span>
+                  <div class="other-rule"></div>
+                </div>
+              </div>
+              <p class="other-text">
+                UIの動きや簡単なインタラクション実装に使用。必要最低限の処理でユーザー体験を向上させることを意識し、保守しやすい記述を心がけています。
+              </p>
+            </article>
+            <article class="other-card">
+              <div class="other-head">
+                <img
+                  class="other-icon-img"
+                  src="assets/img/GPT.webp"
+                  alt="ChatGPTアイコン"
+                  aria-hidden="true"
+                />
+                <div class="other-meta">
+                  <h3 class="other-title">chatGPT</h3>
+                  <span class="other-stars" aria-hidden="true">
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/star.webp" alt="" />
+                    <img src="assets/img/star.webp" alt="" />
+                  </span>
+                  <div class="other-rule"></div>
+                </div>
+              </div>
+              <p class="other-text">
+                文章作成や構成整理、アイデア出しの補助ツールとして活用。要件整理や表現のブラッシュアップを行い、制作スピードと品質の向上に役立てています。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-band footer-band--top">
+        <div class="container footer-top-inner">
+          <nav class="footer-nav" aria-label="フッターナビゲーション">
+            <a href="#about">About</a>
+            <a href="#works">Works</a>
+            <a href="#skills">Skill＆Tools</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-band footer-band--bottom">
+        <div class="container footer-inner">
+          <small class="copyright"
+            >© 2025 Aoi Yamaguchi. All Rights Reserved.</small
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
+
