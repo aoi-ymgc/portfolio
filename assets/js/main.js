@@ -9,6 +9,7 @@ const initSimpleCarousel = ({
   dotClass,
   activeClass,
   alignMode = "start",
+  enableScrollLoop = false,
 }) => {
   const root = document.querySelector(rootSelector);
   const viewport = document.querySelector(viewportSelector);
@@ -20,6 +21,29 @@ const initSimpleCarousel = ({
 
   const cards = Array.from(track.querySelectorAll(cardSelector));
   if (cards.length === 0) return;
+  const loopEnabled = enableScrollLoop && cards.length > 1;
+  const renderCards = [...cards];
+
+  const createLoopClone = (card) => {
+    const clone = card.cloneNode(true);
+    clone.classList.remove(activeClass);
+    clone.setAttribute("aria-hidden", "true");
+    clone
+      .querySelectorAll("a, button, input, select, textarea, [tabindex]")
+      .forEach((element) => {
+        element.setAttribute("tabindex", "-1");
+      });
+    return clone;
+  };
+
+  if (loopEnabled) {
+    const headClone = createLoopClone(cards[cards.length - 1]);
+    const tailClone = createLoopClone(cards[0]);
+    track.insertBefore(headClone, cards[0]);
+    track.appendChild(tailClone);
+    renderCards.unshift(headClone);
+    renderCards.push(tailClone);
+  }
 
   const dots =
     root.querySelector(`.${dotsClass}`) ||
@@ -37,11 +61,11 @@ const initSimpleCarousel = ({
   let scrollTimerId = 0;
   let resizeTimerId = 0;
   let cardTargets = [];
+  let renderTargets = [];
 
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
-  const getCardLeft = (index) => {
-    const target = cards[index];
+  const getTargetLeft = (target) => {
     if (!target) return viewport.scrollLeft;
     const maxLeft = Math.max(0, viewport.scrollWidth - viewport.clientWidth);
     if (alignMode === "center") {
@@ -56,8 +80,11 @@ const initSimpleCarousel = ({
     );
   };
 
+  const getCardLeft = (index) => getTargetLeft(cards[index]);
+
   const rebuildTargets = () => {
     cardTargets = cards.map((_, index) => getCardLeft(index));
+    renderTargets = renderCards.map((card) => getTargetLeft(card));
   };
 
   const updateActive = () => {
@@ -105,6 +132,33 @@ const initSimpleCarousel = ({
     const targetLeft = cardTargets[currentIndex] ?? getCardLeft(currentIndex);
     viewport.scrollTo({ left: targetLeft, behavior });
     updateActive();
+  };
+
+  const jumpFromLoopEdge = () => {
+    if (!loopEnabled || renderTargets.length < 3 || !cardTargets.length) {
+      return false;
+    }
+
+    const currentLeft = viewport.scrollLeft;
+    const firstCloneLeft = renderTargets[0];
+    const lastCloneLeft = renderTargets[renderTargets.length - 1];
+    const tolerance = 6;
+
+    if (Math.abs(currentLeft - firstCloneLeft) <= tolerance) {
+      currentIndex = cards.length - 1;
+      viewport.scrollTo({ left: cardTargets[currentIndex], behavior: "auto" });
+      updateActive();
+      return true;
+    }
+
+    if (Math.abs(currentLeft - lastCloneLeft) <= tolerance) {
+      currentIndex = 0;
+      viewport.scrollTo({ left: cardTargets[currentIndex], behavior: "auto" });
+      updateActive();
+      return true;
+    }
+
+    return false;
   };
 
   const stepBy = (delta) => {
@@ -172,6 +226,7 @@ const initSimpleCarousel = ({
     () => {
       window.clearTimeout(scrollTimerId);
       scrollTimerId = window.setTimeout(() => {
+        if (jumpFromLoopEdge()) return;
         const closest = getClosestIndex();
         if (closest === currentIndex) return;
         currentIndex = closest;
@@ -212,6 +267,7 @@ const initInfiniteWorksCarousel = () => {
     dotClass: "works-dot",
     activeClass: "is-active",
     alignMode: "center",
+    enableScrollLoop: true,
   });
 };
 
