@@ -186,7 +186,7 @@ img {
   align-items: center;
   width: var(--container);
   max-width: 100%;
-  margin: 0 auto 0;
+  margin: 120px auto 0;
 }
 
 .section-bar-title {
@@ -1018,4 +1018,5 @@ section#skills {
     font-size: 10px;
   }
 }
+
 
