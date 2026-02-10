@@ -242,7 +242,7 @@ section#works {
 
 .works-area {
   background: transparent;
-  padding: 80px 0;
+  padding: 80px 0 40px 0;
   border: none;
 }
 
@@ -1018,5 +1018,6 @@ section#skills {
     font-size: 10px;
   }
 }
+
 
 
