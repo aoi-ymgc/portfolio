@@ -22,7 +22,6 @@ const initSimpleCarousel = ({
   const cards = Array.from(track.querySelectorAll(cardSelector));
   if (cards.length === 0) return;
   const loopEnabled = enableScrollLoop && cards.length > 1;
-  const renderCards = [...cards];
 
   const createLoopClone = (card) => {
     const clone = card.cloneNode(true);
@@ -41,8 +40,6 @@ const initSimpleCarousel = ({
     const tailClone = createLoopClone(cards[0]);
     track.insertBefore(headClone, cards[0]);
     track.appendChild(tailClone);
-    renderCards.unshift(headClone);
-    renderCards.push(tailClone);
   }
 
   const dots =
@@ -61,7 +58,6 @@ const initSimpleCarousel = ({
   let scrollTimerId = 0;
   let resizeTimerId = 0;
   let cardTargets = [];
-  let renderTargets = [];
 
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
@@ -84,7 +80,6 @@ const initSimpleCarousel = ({
 
   const rebuildTargets = () => {
     cardTargets = cards.map((_, index) => getCardLeft(index));
-    renderTargets = renderCards.map((card) => getTargetLeft(card));
   };
 
   const updateActive = () => {
@@ -135,23 +130,22 @@ const initSimpleCarousel = ({
   };
 
   const jumpFromLoopEdge = () => {
-    if (!loopEnabled || renderTargets.length < 3 || !cardTargets.length) {
+    if (!loopEnabled || !cardTargets.length) {
       return false;
     }
 
     const currentLeft = viewport.scrollLeft;
-    const firstCloneLeft = renderTargets[0];
-    const lastCloneLeft = renderTargets[renderTargets.length - 1];
-    const tolerance = 6;
+    const maxLeft = Math.max(0, viewport.scrollWidth - viewport.clientWidth);
+    const edgeTolerance = 2;
 
-    if (Math.abs(currentLeft - firstCloneLeft) <= tolerance) {
+    if (currentLeft <= edgeTolerance) {
       currentIndex = cards.length - 1;
       viewport.scrollTo({ left: cardTargets[currentIndex], behavior: "auto" });
       updateActive();
       return true;
     }
 
-    if (Math.abs(currentLeft - lastCloneLeft) <= tolerance) {
+    if (currentLeft >= maxLeft - edgeTolerance) {
       currentIndex = 0;
       viewport.scrollTo({ left: cardTargets[currentIndex], behavior: "auto" });
       updateActive();
@@ -283,6 +277,7 @@ const initDetailWorksCarousel = () => {
     dotClass: "detail-works-dot",
     activeClass: "is-active",
     alignMode: "center",
+    enableScrollLoop: true,
   });
 };
 
