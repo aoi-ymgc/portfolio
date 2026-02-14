@@ -198,7 +198,7 @@ img {
 }
 
 .section-body {
-  padding: 56px 0 0;
+  padding:0;
 }
 
 section#works {
@@ -1018,6 +1018,7 @@ section#skills {
     font-size: 10px;
   }
 }
+
 
 
 
