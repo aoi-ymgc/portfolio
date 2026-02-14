@@ -206,6 +206,7 @@ section#works {
 }
 
 .about {
+  padding-top:40px;
   display: grid;
   grid-template-columns: 360px 1fr;
   gap: 24px;
@@ -441,7 +442,7 @@ section#skills {
   display: flex;
   align-items: flex-start;
   gap: 40px;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 56px;
 }
 .skill-design-image-container {
@@ -546,7 +547,7 @@ section#skills {
   display: grid;
   align-items: center;
   justify-items: center;
-  margin: 56px auto 32px;
+  margin: 56px auto 40px;
 }
 
 .sub-bar-title {
@@ -887,7 +888,7 @@ section#skills {
   .skill-design-row {
     flex-direction: column;
     gap: 24px;
-    margin-top: 60px;
+    margin-top: 40px;
     align-items: center;
     margin-bottom: 40px;
   }
