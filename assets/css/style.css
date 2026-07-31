@@ -9,6 +9,7 @@
   --container: 1120px;
 }
 
+
 * {
   box-sizing: border-box;
 }
@@ -1019,8 +1020,3 @@ section#skills {
     font-size: 10px;
   }
 }
-
-
-
-
-
