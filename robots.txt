@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aoi-ymgc.github.io/portfolio/sitemap.xml
