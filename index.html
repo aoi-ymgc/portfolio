@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | YAMAGUCHI AOI</title>
+    <meta
+      name="description"
+      content="山口碧のWebデザインポートフォリオ。目的に沿った情報設計、UIデザイン、レスポンシブコーディングの制作実績を紹介します。"
+    />
+    <link rel="canonical" href="https://aoi-ymgc.github.io/portfolio/" />
+    <link rel="icon" href="assets/img/logo-PC.webp" type="image/webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="YAMAGUCHI AOI Portfolio" />
+    <meta property="og:description" content="目的に沿った情報設計、UIデザイン、レスポンシブコーディングの制作実績を紹介します。" />
+    <meta property="og:url" content="https://aoi-ymgc.github.io/portfolio/" />
+    <meta property="og:image" content="https://aoi-ymgc.github.io/portfolio/assets/img/topfvpc.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,8 +23,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/portfolio-polish.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">本文へスキップ</a>
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="#top" aria-label="トップへ">
@@ -39,42 +53,29 @@
           <a class="nav-link" href="#works">制作実績</a>
           <a class="nav-link" href="#about">私について</a>
           <a class="nav-link" href="#skills">スキル＆ツール</a>
+          <a class="nav-link nav-link--contact" href="#contact">GitHub</a>
         </nav>
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-label="トップ">
-        <div class="hero-bg" role="img" aria-label="トップビジュアル"></div>
+    <main id="main-content">
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
         <div class="container hero-inner">
-          <h1 class="hero-title">
-            <span class="hero-title-shadow">
-              <span class="hero-title-line"
-                >価値が<span class="hero-title-small">伝わる</span></span
-              >
-              <span class="hero-title-line hero-title-large">構成</span>
-              <span class="hero-title-line hero-title-small">と</span>
-              <span class="hero-title-line"
-                >読<span class="hero-title-small">みやすい</span></span
-              >
-              <span class="hero-title-line hero-title-large"
-                >デザイン<span class="hero-title-small">を。</span></span
-              >
-            </span>
-            <span class="hero-title-main">
-              <span class="hero-title-line"
-                >価値が<span class="hero-title-small">伝わる</span></span
-              >
-              <span class="hero-title-line hero-title-large">構成</span>
-              <span class="hero-title-line hero-title-small">と</span>
-              <span class="hero-title-line"
-                >読<span class="hero-title-small">みやすい</span></span
-              >
-              <span class="hero-title-line hero-title-large"
-                >デザイン<span class="hero-title-small">を。</span></span
-              >
-            </span>
-          </h1>
+          <div class="hero-copy">
+            <p class="hero-eyebrow">WEB DESIGNER / FRONT-END</p>
+            <h1 id="hero-title" class="hero-title">
+              価値が伝わる構成と、<br />読みやすいデザインを。
+            </h1>
+            <p class="hero-lead">
+              目的に沿った情報設計からUIデザイン、レスポンシブ実装まで。<br />
+              見る人が迷わず行動できるWebサイトを制作します。
+            </p>
+            <div class="hero-actions">
+              <a class="button button--primary" href="#works">制作実績を見る</a>
+              <a class="button button--secondary" href="#about">私について</a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -93,6 +94,8 @@
               alt="プロフィール写真"
               width="360"
               height="371"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div class="about-content">
@@ -100,18 +103,29 @@
             <p class="about-name-ja">山口　碧</p>
             <div class="about-text">
               <p>
-                1996年生まれ。<br />
-                中京大学卒業後、ドラッグストアに入社し、店舗スタッフから店長として店舗運営に携わってきました。<br />
-                売場づくりや陳列レイアウトの工夫によって、お客様の動線や商品への注目度が変わることを実感し、
-                「伝え方」や「見せ方」が人の行動に与える影響に魅力を感じるようになりました。<br />
-                この経験をきっかけにWebの分野に興味を持ち、Webデザイナーへの転身を決意。<br />
-                株式会社ESA CREATへ入社後は、HTML / CSS /
-                JavaScriptを中心に学習し、デザインと実装の両面からWeb制作に取り組んでいます。<br />
-                現場経験で培った視点を活かしユーザーやクライアントの目的に寄り添った制作を大切にしています。<br />
-                「価値が正しく伝わる構成」と「読みやすく、迷わないデザイン」を軸に、<br />
-                デザインと機能性の両立を意識したWebデザインを追求しています。
+                1996年生まれ。中京大学卒業後、ドラッグストアで店舗スタッフから店長まで経験しました。売場づくりを通して「伝え方」や「見せ方」が人の行動を変える面白さを知り、Webデザイナーへ転身しました。
+              </p>
+              <p>
+                現在はHTML / CSS / JavaScriptを学びながら、情報設計・UIデザイン・実装の両面からWeb制作に取り組んでいます。現場で培った利用者視点を活かし、目的に寄り添った制作を大切にしています。
               </p>
             </div>
+            <ul class="strength-list" aria-label="私の強み">
+              <li>
+                <span class="strength-number">01</span>
+                <strong>目的から組み立てる</strong>
+                <span>ゴールと優先順位を整理し、伝わる情報設計へ落とし込みます。</span>
+              </li>
+              <li>
+                <span class="strength-number">02</span>
+                <strong>利用者の視点で整える</strong>
+                <span>読みやすさと迷いにくさを基準に、導線や余白を設計します。</span>
+              </li>
+              <li>
+                <span class="strength-number">03</span>
+                <strong>デザインを実装につなぐ</strong>
+                <span>レスポンシブ表示まで意識し、再現性の高いUIを制作します。</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -125,30 +139,22 @@
 
         <div class="works-area">
           <div class="container works-inner">
-            <button
-              class="works-arrow works-arrow--left"
-              type="button"
-              aria-label="前へ"
-            >
-              <span aria-hidden="true">‹</span>
-            </button>
-
-            <div
-              class="works-viewport"
-              tabindex="0"
-              aria-label="制作実績一覧（横スクロール）"
-            >
+            <div class="works-viewport" role="region" aria-label="制作実績8件">
               <div class="works-track">
                 <article class="work-card">
                   <img
                     class="work-thumb"
                     src="assets/img/works1.webp"
-                    alt="地域密着型工務店のBtoB向けコーポレートサイトのデザイン制作"
+                    alt="地域密着型工務店の住宅購入者向けコーポレートサイトのデザイン制作"
+                    width="720"
+                    height="480"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div class="work-content">
                     <p class="work-type">Webサイト</p>
                     <h3 class="work-title">
-                      地域密着型工務店のBtoB向けコーポレートサイトのデザイン制作
+                      地域密着型工務店の住宅購入者向けコーポレートサイトのデザイン制作
                     </h3>
                     <p class="work-description">
                       新築住宅の購入・リフォームを考えている30～50代の家庭を持つ夫婦をターゲットに新規顧客獲得・信頼性向上・問い合わせの促進を目的としたコーポレートサイトのデザイン。問い合わせの促進のため、サービス内容やFAQなど、ユーザーが抱くであろう疑問を先回りして解決する情報設計。
@@ -167,6 +173,10 @@
                     class="work-thumb"
                     src="assets/img/works2.webp"
                     alt="総合キャリア支援プログラムLPデザイン制作"
+                    width="720"
+                    height="480"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div class="work-content">
                     <p class="work-type">Webサイト</p>
@@ -190,6 +200,10 @@
                     class="work-thumb"
                     src="assets/img/works3.webp"
                     alt="物流会社のBtoB向けコーポレートサイトのデザイン制作"
+                    width="720"
+                    height="480"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div class="work-content">
                     <p class="work-type">Webサイト</p>
@@ -213,6 +227,10 @@
                     class="work-thumb"
                     src="assets/img/works4.webp"
                     alt="プログラミングスクールLPデザイン制作"
+                    width="720"
+                    height="480"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div class="work-content">
                     <p class="work-type">Webサイト</p>
@@ -235,6 +253,10 @@
                     class="work-thumb"
                     src="assets/img/works5.webp"
                     alt="コーポレートサイトデザイン改修"
+                    width="720"
+                    height="480"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div class="work-content">
                     <p class="work-type">Webサイト</p>
@@ -256,6 +278,10 @@
                     class="work-thumb"
                     src="assets/img/works6.webp"
                     alt="フットサルチーム試合告知POP制作"
+                    width="720"
+                    height="480"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div class="work-content">
                     <p class="work-type">POP作成</p>
@@ -275,6 +301,10 @@
                     class="work-thumb"
                     src="assets/img/works7.webp"
                     alt="IT点呼キーパー Webコーディング"
+                    width="720"
+                    height="480"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div class="work-content">
                     <p class="work-type">Webサイト</p>
@@ -296,6 +326,10 @@
                     class="work-thumb"
                     src="assets/img/works8.webp"
                     alt="Blue Shoes Webコーディング"
+                    width="720"
+                    height="480"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div class="work-content">
                     <p class="work-type">Webサイト</p>
@@ -315,13 +349,6 @@
               </div>
             </div>
 
-            <button
-              class="works-arrow works-arrow--right"
-              type="button"
-              aria-label="次へ"
-            >
-              <span aria-hidden="true">›</span>
-            </button>
           </div>
         </div>
       </section>
@@ -333,31 +360,38 @@
           </div>
         </div>
         <div class="container section-body">
+          <p class="section-intro">
+            デザインと実装を行き来しながら、意図が伝わり、更新しやすいWebサイトを制作します。
+          </p>
           <div class="skill-design-row">
             <div class="skill-design-image-container">
               <img
                 src="assets/img/skills1.webp"
                 alt="デザインイメージ"
                 class="skill-design-image"
+                width="360"
+                height="240"
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
             <div class="skill-design-content">
               <div class="label-card">
-                <p class="label-card-text">Design</p>
+                <h3 class="label-card-text">Design tools</h3>
               </div>
 
               <div class="skill-design-icons">
-                <img src="assets/img/figma.webp" alt="Figma" />
-                <img src="assets/img/Photoshop.webp" alt="Photoshop" />
-                <img src="assets/img/illustrator.webp" alt="Illustrator" />
-                <img src="assets/img/keynote.webp" alt="その他デザインツール" />
+                <img src="assets/img/figma.webp" alt="Figma" width="96" height="96" loading="lazy" decoding="async" />
+                <img src="assets/img/Photoshop.webp" alt="Photoshop" width="96" height="96" loading="lazy" decoding="async" />
+                <img src="assets/img/illustrator.webp" alt="Illustrator" width="96" height="96" loading="lazy" decoding="async" />
+                <img src="assets/img/keynote.webp" alt="その他デザインツール" width="96" height="96" loading="lazy" decoding="async" />
               </div>
             </div>
           </div>
 
           <article class="tool-row">
-            <img class="tool-image" src="assets/img/skills2.webp" alt="Figma" />
+            <img class="tool-image" src="assets/img/skills2.webp" alt="Figma" width="360" height="240" loading="lazy" decoding="async" />
             <div class="tool-content">
               <h3 class="tool-title">Figma</h3>
               <div class="tool-rule"></div>
@@ -377,6 +411,10 @@
               class="tool-image"
               src="assets/img/skills3.webp"
               alt="Photoshop / Illustrator"
+              width="360"
+              height="240"
+              loading="lazy"
+              decoding="async"
             />
             <div class="tool-content">
               <h3 class="tool-title">Photoshop / Illustrator</h3>
@@ -407,7 +445,7 @@
 
                 <div class="other-meta">
                   <h3 class="other-title">Slack</h3>
-                  <span class="other-stars" aria-hidden="true">
+                  <span class="other-stars" role="img" aria-label="習熟度 3段階中2.5">
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/starharf.webp" alt="" />
@@ -430,7 +468,7 @@
                 />
                 <div class="other-meta">
                   <h3 class="other-title">Visual Studio Code</h3>
-                  <span class="other-stars" aria-hidden="true">
+                  <span class="other-stars" role="img" aria-label="習熟度 3段階中3">
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/star.webp" alt="" />
@@ -453,7 +491,7 @@
                 />
                 <div class="other-meta">
                   <h3 class="other-title">Excel</h3>
-                  <span class="other-stars" aria-hidden="true">
+                  <span class="other-stars" role="img" aria-label="習熟度 3段階中3">
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/star.webp" alt="" />
@@ -476,7 +514,7 @@
                 />
                 <div class="other-meta">
                   <h3 class="other-title">PowerPoint</h3>
-                  <span class="other-stars" aria-hidden="true">
+                  <span class="other-stars" role="img" aria-label="習熟度 3段階中3">
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/star.webp" alt="" />
@@ -499,7 +537,7 @@
                 />
                 <div class="other-meta">
                   <h3 class="other-title">HTML</h3>
-                  <span class="other-stars" aria-hidden="true">
+                  <span class="other-stars" role="img" aria-label="習熟度 3段階中3">
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/star.webp" alt="" />
@@ -521,7 +559,7 @@
                 />
                 <div class="other-meta">
                   <h3 class="other-title">CSS</h3>
-                  <span class="other-stars" aria-hidden="true">
+                  <span class="other-stars" role="img" aria-label="習熟度 3段階中2.5">
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/starharf.webp" alt="" />
@@ -543,7 +581,7 @@
                 />
                 <div class="other-meta">
                   <h3 class="other-title">JavaScript</h3>
-                  <span class="other-stars" aria-hidden="true">
+                  <span class="other-stars" role="img" aria-label="習熟度 3段階中1.5">
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/starharf.webp" alt="" />
                     <img src="assets/img/star0.webp" alt="" />
@@ -565,7 +603,7 @@
                 />
                 <div class="other-meta">
                   <h3 class="other-title">ChatGPT</h3>
-                  <span class="other-stars" aria-hidden="true">
+                  <span class="other-stars" role="img" aria-label="習熟度 3段階中3">
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/star.webp" alt="" />
                     <img src="assets/img/star.webp" alt="" />
@@ -580,6 +618,25 @@
           </div>
         </div>
       </section>
+
+      <section id="contact" class="contact-section" aria-labelledby="contact-title">
+        <div class="container contact-inner">
+          <p class="contact-eyebrow">GITHUB</p>
+          <h2 id="contact-title">制作実績や継続中の取り組みをご覧ください。</h2>
+          <p>
+            GitHubではコーディング制作物や、継続して取り組んでいる内容をご覧いただけます。
+          </p>
+          <a
+            class="button button--primary contact-button"
+            href="https://github.com/aoi-ymgc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHubプロフィールを見る
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -589,13 +646,14 @@
             <a href="#about">About</a>
             <a href="#works">Works</a>
             <a href="#skills">Skill＆Tools</a>
+            <a href="#contact">GitHub</a>
           </nav>
         </div>
       </div>
       <div class="footer-band footer-band--bottom">
         <div class="container footer-inner">
           <small class="copyright"
-            >© 2025 Aoi Yamaguchi. All Rights Reserved.</small
+            >© 2026 Aoi Yamaguchi. All Rights Reserved.</small
           >
         </div>
       </div>
