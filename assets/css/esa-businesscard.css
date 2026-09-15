@@ -1,0 +1,125 @@
+/* This case study keeps the shared portfolio styles and preserves artwork ratios. */
+.esa-case .esa-hero {
+  padding: 24px 0 40px;
+  background: var(--surface-soft);
+}
+
+.esa-case .breadcrumbs {
+  margin-bottom: 28px;
+  padding-top: 0;
+}
+
+.esa-case .esa-title {
+  margin: 0 0 16px;
+  color: var(--navy);
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1.5;
+}
+
+.esa-case .esa-title span { display: block; }
+.esa-case .esa-lead { margin: 0 0 28px; }
+
+.esa-case .esa-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.esa-case figure { margin: 0; min-width: 0; }
+.esa-case figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  object-fit: contain;
+}
+
+.esa-case figcaption {
+  margin-top: 10px;
+  color: var(--navy);
+  font-size: 14px;
+}
+
+.esa-case .esa-note {
+  margin: 16px 0 0;
+  color: #53606d;
+  font-size: 13px;
+}
+
+.esa-case .detail-content { padding-top: 48px; }
+.esa-case .detail-summary-table { margin-bottom: 48px; }
+.esa-case .detail-section-bar { margin-top: 64px; }
+.esa-case .esa-copy { max-width: 800px; margin-inline: auto; }
+.esa-case .esa-copy p { margin: 0 0 20px; line-height: 1.9; }
+.esa-case .esa-copy p:last-child { margin-bottom: 0; }
+.esa-case .esa-subtitle { margin: 40px 0 20px; }
+
+.esa-case .esa-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.esa-case .esa-comparison h3 { margin: 0 0 8px; font-size: 20px; color: var(--navy); }
+.esa-case .esa-comparison p { margin: 0 0 20px; }
+.esa-case .esa-before { max-width: 310px; gap: 16px; }
+.esa-case .esa-after { max-width: 480px; }
+
+.esa-case .esa-process {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0;
+  padding: 20px 0;
+  margin: 0 0 28px;
+  border-block: 1px solid var(--border);
+  list-style: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.esa-case .esa-process li:not(:last-child)::after {
+  content: "→";
+  display: inline-block;
+  margin: 0 12px;
+  color: #657487;
+}
+
+.esa-case .esa-drafts {
+  max-width: 680px;
+  margin: 28px auto 0;
+  gap: 20px;
+}
+
+.esa-case .esa-print-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 0 0 24px;
+  margin: 0 0 28px;
+  list-style: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.esa-case .esa-print-flow strong { display: block; color: var(--navy); font-size: 18px; }
+.esa-case .esa-print-flow span { display: block; margin-top: 6px; font-size: 14px; }
+.esa-case .esa-print-checklist { padding-left: 1.4em; margin: 0 0 20px; }
+.esa-case .esa-print-checklist li { margin: 4px 0; }
+.esa-case .esa-photos { margin-bottom: 24px; }
+
+@media (max-width: 768px) {
+  .esa-case .esa-hero { padding-block: 20px 28px; }
+  .esa-case .breadcrumbs { margin-bottom: 24px; font-size: 11px; }
+  .esa-case .esa-pair { grid-template-columns: 1fr; gap: 24px; }
+  .esa-case .detail-content { padding-top: 32px; }
+  .esa-case .detail-section-bar { margin-top: 48px; }
+  .esa-case .esa-comparison { grid-template-columns: 1fr; gap: 28px; }
+  .esa-case .esa-before { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .esa-case .esa-drafts { max-width: 300px; }
+  .esa-case .esa-print-flow { grid-template-columns: 1fr; gap: 16px; }
+  .esa-case .esa-copy p { font-size: 15px; }
+}
