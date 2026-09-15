@@ -53,7 +53,8 @@
   let cards;
   try {
     const indexUrl = new URL("index.html", location.href);
-    const response = await fetch(indexUrl);
+    indexUrl.searchParams.set("carousel", "1");
+    const response = await fetch(indexUrl.href, { cache: "no-store" });
     if (!response.ok) throw new Error("Works could not be loaded");
     const source = new DOMParser().parseFromString(
       await response.text(),
