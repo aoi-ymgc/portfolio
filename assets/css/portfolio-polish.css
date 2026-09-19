@@ -691,6 +691,7 @@ section#works {
 @media (max-width: 768px) {
   .header-inner { height: 64px; }
   .brand-logo { width: 64px; height: 48px; }
+  .brand {transform: translateY(-2px);}
   .contact-inner h2 { font-size: 25px; }
   .contact-inner h2 br { display: none; }
   html {
