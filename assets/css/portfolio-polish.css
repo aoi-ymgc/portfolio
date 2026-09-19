@@ -20,8 +20,7 @@ body {
 
 #about,
 #works,
-#skills,
-#contact {
+#skills {
   scroll-margin-top: 96px;
 }
 
@@ -52,6 +51,9 @@ body {
 .site-header {
   box-shadow: 0 2px 16px rgba(20, 35, 60, 0.08);
 }
+
+.header-inner { height: 92px; }
+.brand-logo { width: 100px; height: 84px; }
 
 .nav {
   align-items: center;
@@ -310,6 +312,58 @@ section#works {
   width: 100%;
 }
 
+@media (min-width: 769px) {
+  .works-track > .work-card:last-child {
+    grid-column: 1 / -1;
+    width: calc((100% - 28px) / 2);
+    justify-self: center;
+  }
+}
+
+.works-more {
+  margin-top: 44px;
+  border-top: 1px solid var(--border);
+}
+
+.works-more summary,
+.other-tools summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+  padding: 12px 4px;
+  color: var(--navy);
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.works-more summary::-webkit-details-marker,
+.other-tools summary::-webkit-details-marker { display: none; }
+.works-more summary:hover,
+.other-tools summary:hover { color: var(--accent-on-light); }
+.works-more summary:focus-visible,
+.other-tools summary:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
+.works-more-open { display: none; }
+.works-more[open] .works-more-open { display: inline; }
+.works-more[open] .works-more-closed { display: none; }
+.works-more-symbol::after,
+.other-tools summary span::after { content: "+"; font-size: 24px; line-height: 1; }
+.works-more[open] .works-more-symbol::after,
+.other-tools[open] summary span::after { content: "−"; }
+.works-more-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding-top: 24px;
+}
+.works-more-grid .work-card--compact { border-top-width: 4px; box-shadow: none; }
+.work-card--compact .work-content { padding: 18px; }
+.work-card--compact .work-title { min-height: 0; font-size: 16px; }
+.work-card--compact .work-labels { margin-bottom: 16px; }
+.work-card--compact .work-thumb { object-fit: cover; }
+.works-track .work-card:nth-child(2) .work-thumb { object-fit: contain; background: #e9eef2; }
+
 .work-card {
   width: 100%;
   min-height: 0;
@@ -425,7 +479,7 @@ section#works {
 
 .skill-design-icons {
   display: grid;
-  grid-template-columns: repeat(4, minmax(56px, 80px));
+  grid-template-columns: repeat(3, minmax(56px, 80px));
   gap: clamp(16px, 4vw, 32px);
   justify-content: center;
   padding: 0;
@@ -480,6 +534,16 @@ section#works {
   border-left: 8px solid var(--accent);
 }
 
+.tool-group-intro { margin: 22px 0 28px; color: var(--muted); }
+.ai-tools-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 36px; }
+.ai-tool { padding: 24px 0; border-bottom: 1px solid var(--border); }
+.ai-tool h4, .workflow-list h4 { margin: 0 0 8px; color: var(--navy); font-size: 19px; }
+.ai-tool p, .workflow-list p { margin: 0; font-size: 15px; line-height: 1.8; }
+.workflow-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; padding: 26px 0; }
+.workflow-list article { border-left: 3px solid var(--accent); padding-left: 18px; }
+.other-tools { margin-top: 24px; border-top: 1px solid var(--border); }
+.other-tools .workflow-list { padding-top: 8px; }
+
 .others-grid {
   gap: 20px;
 }
@@ -507,12 +571,6 @@ section#works {
   font-size: 20px;
 }
 
-.other-stars img {
-  width: 24px;
-  height: 24px;
-  filter: brightness(0.72) saturate(1.2);
-}
-
 .other-text {
   width: 100%;
   margin: 8px 0 0;
@@ -527,8 +585,8 @@ section#works {
 }
 
 .contact-inner {
-  max-width: 800px;
-  text-align: center;
+  max-width: 960px;
+  text-align: left;
 }
 
 .contact-eyebrow {
@@ -542,9 +600,15 @@ section#works {
 }
 
 .contact-inner > p:not(.contact-eyebrow) {
-  margin: 20px auto 28px;
+  max-width: 70ch;
+  margin: 20px 0 28px;
   color: rgba(255, 255, 255, 0.82);
 }
+
+.design-ai-axes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 38px; }
+.design-ai-axes > div { border-top: 1px solid rgba(255,255,255,.5); padding-top: 16px; }
+.design-ai-axes h3 { margin: 0 0 6px; color: var(--accent-on-dark); font-size: 18px; }
+.design-ai-axes p { margin: 0; font-size: 14px; }
 
 .contact-button {
   min-width: min(100%, 320px);
@@ -586,17 +650,19 @@ section#works {
   .works-track {
     gap: 20px;
   }
+  .works-more-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 768px) {
+  .header-inner { height: 64px; }
+  .brand-logo { width: 72px; height: 60px; }
   html {
     scroll-padding-top: 76px;
   }
 
   #about,
   #works,
-  #skills,
-  #contact {
+  #skills {
     scroll-margin-top: 76px;
   }
 
@@ -709,6 +775,8 @@ section#works {
     min-width: 0;
     padding: 0;
   }
+  .works-more-grid, .ai-tools-grid, .workflow-list, .design-ai-axes { grid-template-columns: 1fr; }
+  .works-more-grid { gap: 20px; }
 
   .work-card {
     width: 100%;
@@ -777,7 +845,7 @@ section#works {
   }
 
   .skill-design-icons {
-    grid-template-columns: repeat(4, minmax(48px, 64px));
+    grid-template-columns: repeat(3, minmax(48px, 64px));
   }
 
   .tool-row {

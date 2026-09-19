@@ -607,19 +607,6 @@ section#skills {
   grid-area: title;
 }
 
-.other-stars {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  grid-area: stars;
-}
-
-.other-stars img {
-  width: 36.56px;
-  height: 34.92px;
-  display: block;
-}
-
 .other-rule {
   grid-area: rule;
   height: 2px;
@@ -992,11 +979,6 @@ section#skills {
       "rule"
       "stars";
     align-items: start;
-  }
-
-  .other-stars img {
-    width: 24px;
-    height: 24px;
   }
 
   .other-rule {
