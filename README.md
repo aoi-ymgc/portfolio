@@ -5,7 +5,7 @@ Webデザイン・コーディングの制作実績をまとめた静的ポー�
 ## 構成
 
 - `index.html`: トップ、プロフィール、制作実績、スキル、GitHub導線
-- `作品詳細1.html` ～ `作品詳細10.html`: 各制作事例の詳細
+- `作品詳細1.html` ～ `作品詳細11.html`: 各制作事例の詳細
 - `assets/css/`: 共通・詳細ページのスタイル
 - `assets/js/`: ナビゲーションなどの操作
 - `assets/img/`: サイト内画像
@@ -38,6 +38,12 @@ npx.cmd --yes html-validate index.html "作品詳細*.html"
 ```powershell
 git switch --detach backup/pre-brushup-20260731
 ```
+
+## 2026-09-19 Aoi Toolsの制作実績追加
+
+- `作品詳細11.html` に3ツールの制作背景、実画面、改善例、AIを使った反復制作の流れを掲載。
+- `assets/img/aoi-tools/` の5枚は公開中の各サービスから撮影した画面と、その3画面を組み合わせたHero画像。画像生成は使用していません。
+- タブ操作とページ固有の見た目は `assets/js/aoi-tools.js` / `assets/css/aoi-tools.css` に分離。JavaScript無効時は3ツールすべての本文を表示します。
 
 ## 2026-09-15 名刺リニューアルの制作実績追加
 

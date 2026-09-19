@@ -1,0 +1,64 @@
+.aoi-tools-case .detail-hero-bg { background-image: url("../img/aoi-tools/hero.webp"); }
+.aoi-tools-case .detail-hero-bg::before { background: rgba(20, 36, 62, .58); }
+.aoi-tools-case .detail-hero-title { font-size: clamp(22px, 3vw, 36px); }
+.aoi-tools-case .detail-section-bar { margin-top: 68px; }
+.aoi-tools-case .aoi-tools-copy { max-width: 800px; margin: 0 auto; }
+.aoi-tools-case .aoi-tools-copy p { margin: 0 0 16px; line-height: 1.85; }
+.aoi-tools-case .aoi-tools-tabs-hint { margin: 0 0 14px; font-size: 14px; color: var(--text); }
+.aoi-tools-case .aoi-tools-tabs { display: flex; overflow-x: auto; border-bottom: 1px solid var(--muted); scrollbar-width: thin; }
+.aoi-tools-case .aoi-tools-tab { flex: none; min-height: 50px; padding: 10px 25px; border: 0; border-bottom: 3px solid transparent; background: #fff; color: var(--navy); font: inherit; font-weight: 400; white-space: nowrap; cursor: pointer; }
+.aoi-tools-case .aoi-tools-tab[aria-selected="true"] { border-bottom-color: var(--accent); font-weight: 700; }
+.aoi-tools-case .aoi-tools-tab:hover { color: var(--accent-on-light, #c65300); }
+.aoi-tools-case .aoi-tools-tab:focus-visible, .aoi-tools-case a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.aoi-tools-case .aoi-tools-tab-short { display: none; }
+.aoi-tools-case.aoi-tools-enhanced .aoi-tools-panel:not(.is-active) { display: none; }
+.aoi-tools-case .aoi-tools-panel { padding: 28px 0 12px; border-bottom: 1px solid var(--muted); }
+.aoi-tools-case .aoi-tools-panel + .aoi-tools-panel { margin-top: 28px; }
+.aoi-tools-case.aoi-tools-enhanced .aoi-tools-panel + .aoi-tools-panel { margin-top: 0; }
+.aoi-tools-case .aoi-tools-screen { display: block; width: 100%; max-width: 1120px; height: auto; border: 1px solid var(--soft); border-radius: 6px; box-shadow: 0 10px 24px rgba(20,35,60,.1); }
+.aoi-tools-case .aoi-tools-panel-copy { max-width: 800px; margin: 24px auto 0; }
+.aoi-tools-case .aoi-tools-panel-copy h3 { margin: 0 0 12px; color: var(--navy); font-size: 20px; }
+.aoi-tools-case .aoi-tools-panel-copy p { margin: 0; line-height: 1.75; }
+.aoi-tools-case .aoi-tools-points { display: flex; flex-wrap: wrap; gap: 12px 32px; list-style: none; padding: 18px 0; margin: 22px 0; border-block: 1px solid var(--muted); color: var(--navy); font-weight: 700; }
+.aoi-tools-case .aoi-tools-points span { margin-right: 10px; color: var(--accent-on-light, #c65300); font-family: Inter, sans-serif; }
+.aoi-tools-case .aoi-tools-panel-link { display: inline-block; margin-top: 4px; color: var(--navy); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.aoi-tools-case .aoi-tools-panel-link:hover { color: var(--accent-on-light, #c65300); }
+.aoi-tools-case .aoi-tools-improvement { margin: 4px 0 26px; padding: 20px 24px; background: var(--surface-soft, #f7f8fa); }
+.aoi-tools-case .aoi-tools-improvement h4 { margin: 0 0 14px; color: var(--navy); font-size: 16px; }
+.aoi-tools-case .aoi-tools-before-after { display: flex; align-items: center; gap: 18px; margin-bottom: 14px; }
+.aoi-tools-case .aoi-tools-before-after div { flex: 1; padding: 12px 0; border-top: 2px solid var(--navy); }
+.aoi-tools-case .aoi-tools-before-after small, .aoi-tools-case .aoi-tools-before-after strong, .aoi-tools-case .aoi-tools-before-after div span { display: block; }
+.aoi-tools-case .aoi-tools-before-after small { color: var(--navy); font: 700 12px Inter, sans-serif; }
+.aoi-tools-case .aoi-tools-before-after strong { margin-top: 5px; color: var(--navy); font-size: 20px; }
+.aoi-tools-case .aoi-tools-before-after div span { font-size: 13px; }
+.aoi-tools-case .aoi-tools-improvement p { font-size: 14px; }
+.aoi-tools-case .aoi-tools-flow { max-width: 900px; margin: 30px auto 0; padding: 24px; border: 1px solid var(--muted); background: var(--surface-soft, #f7f8fa); }
+.aoi-tools-case .aoi-tools-flow ol { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; list-style: none; margin: 0; padding: 0; }
+.aoi-tools-case .aoi-tools-flow li { position: relative; min-width: 0; padding-bottom: 10px; border-bottom: 2px solid var(--navy); }
+.aoi-tools-case .aoi-tools-flow li:not(:last-child)::after { content: "→"; position: absolute; top: 12px; right: -19px; color: var(--accent-on-light, #c65300); }
+.aoi-tools-case .aoi-tools-flow small, .aoi-tools-case .aoi-tools-flow strong { display: block; }
+.aoi-tools-case .aoi-tools-flow small { font-size: 13px; }
+.aoi-tools-case .aoi-tools-flow strong { color: var(--navy); font-size: 18px; }
+.aoi-tools-case .aoi-tools-flow p { margin: 18px 0 0; padding-top: 12px; border-top: 1px solid var(--muted); color: var(--navy); font-weight: 700; text-align: right; }
+.aoi-tools-case .aoi-tools-series { margin-bottom: 0; }
+.aoi-tools-case .aoi-tools-series .detail-point-body p + p { margin-top: 14px; }
+.aoi-tools-case .aoi-tools-series .aoi-tools-panel-link { margin-top: 20px; }
+.aoi-tools-case .aoi-tools-link-list { max-width: 800px; margin: 0 auto; padding: 0; list-style: none; border-top: 1px solid var(--muted); }
+.aoi-tools-case .aoi-tools-link-list li { border-bottom: 1px solid var(--muted); }
+.aoi-tools-case .aoi-tools-link-list a { display: block; padding: 17px 8px; color: var(--navy); font-weight: 700; text-decoration: none; }
+.aoi-tools-case .aoi-tools-link-list a:hover { color: var(--accent-on-light, #c65300); }
+@media (max-width: 768px) {
+  .aoi-tools-case .detail-hero-bg { background-image: url("../img/aoi-tools/hero.webp"); }
+  .aoi-tools-case .detail-section-bar { margin-top: 48px; }
+  .aoi-tools-case .aoi-tools-tab { padding-inline: 18px; }
+  .aoi-tools-case .aoi-tools-tab-long { display: none; }
+  .aoi-tools-case .aoi-tools-tab-short { display: inline; }
+  .aoi-tools-case .aoi-tools-panel { padding-top: 20px; }
+  .aoi-tools-case .aoi-tools-panel-copy { margin-top: 18px; }
+  .aoi-tools-case .aoi-tools-panel-copy h3 { font-size: 18px; }
+  .aoi-tools-case .aoi-tools-before-after { gap: 10px; }
+  .aoi-tools-case .aoi-tools-before-after strong { font-size: 16px; }
+  .aoi-tools-case .aoi-tools-flow ol { grid-template-columns: 1fr; gap: 17px; }
+  .aoi-tools-case .aoi-tools-flow li:not(:last-child)::after { content: "↓"; top: auto; bottom: -21px; right: 2px; }
+  .aoi-tools-case .aoi-tools-flow p { text-align: left; }
+}

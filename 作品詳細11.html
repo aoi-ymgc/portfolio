@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aoi Tools | YAMAGUCHI AOI Portfolio</title>
+    <meta name="description" content="Webパーツ図鑑、Wireframe Maker、Responsive Preview LabをまとめたAoi Toolsの制作背景、UI設計、AIを活用した制作と改善を紹介します。" />
+    <link rel="canonical" href="https://aoi-ymgc.github.io/portfolio/%E4%BD%9C%E5%93%81%E8%A9%B3%E7%B4%B011.html" />
+    <link rel="icon" href="assets/img/logo-PC.webp" type="image/webp" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Aoi Tools | YAMAGUCHI AOI Portfolio" />
+    <meta property="og:description" content="Web制作の小さな不便から生まれた3つのツールと、その制作・改善の過程。" />
+    <meta property="og:url" content="https://aoi-ymgc.github.io/portfolio/%E4%BD%9C%E5%93%81%E8%A9%B3%E7%B4%B011.html" />
+    <meta property="og:image" content="https://aoi-ymgc.github.io/portfolio/assets/img/aoi-tools/hero.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/portfolio-polish.css" />
+    <link rel="stylesheet" href="assets/css/syousai.css" />
+    <link rel="stylesheet" href="assets/css/aoi-tools.css" />
+  </head>
+  <body class="aoi-tools-case">
+    <a class="skip-link" href="#main-content">本文へスキップ</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#top" aria-label="トップへ"><img class="brand-logo" src="assets/img/logo-PC.webp" alt="Aoi Yamaguchi" width="96" height="76" /></a>
+        <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-line"></span><span class="nav-toggle-line"></span><span class="nav-toggle-line"></span></button>
+        <nav class="nav" id="site-nav" aria-label="主要ナビゲーション">
+          <a class="nav-link" href="index.html#works">制作実績</a><a class="nav-link" href="index.html#about">私について</a><a class="nav-link" href="index.html#skills">スキル＆ツール</a><a class="nav-link" href="index.html#contact">GitHub</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="detail-hero">
+        <div class="detail-hero-bg"><h1 class="detail-hero-title">Aoi Tools<br />Web制作支援ツールシリーズ</h1></div>
+        <div class="container"><nav class="breadcrumbs" aria-label="パンくずリスト"><ul><li><a href="index.html">トップページ</a></li><li>Aoi Tools</li></ul></nav></div>
+      </section>
+      <section class="section detail-content" aria-label="制作事例の詳細">
+        <div class="container">
+          <div class="detail-summary-table detail-summary-table--no-top-border">
+            <div class="table-row"><p class="table-header">プロジェクト概要</p><p class="table-data">Web制作の学習や実際の制作作業で感じた不便をもとに制作した、3つのWeb制作支援ツールシリーズ。企画・要件整理・UI設計から実装、確認、公開まで行いました。</p></div>
+            <div class="table-row"><p class="table-header">制作目的</p><p class="table-data">Web制作の中で繰り返し発生する「調べる」「構成を考える」「表示を確認する」といった作業を、必要な機能に絞ったツールで使いやすくすること。</p></div>
+            <div class="table-row"><p class="table-header">担当範囲</p><p class="table-data">企画 / 要件整理 / 情報設計 / UI・UX設計 / デザイン方針策定 / 実装ディレクション / 動作確認 / 改善 / 公開</p></div>
+            <div class="table-row"><p class="table-header">AI活用</p><p class="table-data">ChatGPTで要件や仕様を整理し、自身でデザインの方向性を決定したうえでCodexを使って実装。完成した画面を自身で確認し、UI・UXやデザインの知識と照らし合わせながら修正・改善しました。</p></div>
+            <div class="table-row"><p class="table-header">使用技術</p><p class="table-data">HTML / CSS / JavaScript / React / TypeScript / Vite / Next.js / Cloudflare Workers</p></div>
+            <div class="table-row"><p class="table-header">公開サイト</p><p class="table-data"><a href="https://aoi-tools.aoiroymgc.workers.dev/" target="_blank" rel="noopener noreferrer">Aoi Toolsを見る ↗</a></p></div>
+          </div>
+
+          <div class="detail-section-bar"><h2 class="detail-section-bar-title">制作背景</h2></div>
+          <div class="aoi-tools-copy">
+            <p>Aoi Toolsは、最初から3つのツールをまとめて作ろうと考えていたわけではありません。</p>
+            <p>Web制作を学んでいた頃、専門用語の意味が分からないまま使うことが多く、「見た目や動きと一緒に確認できたら分かりやすい」と考え、Webパーツ図鑑を制作しました。</p>
+            <p>その後、普段の制作で時間がかかっていたワイヤーフレーム作成を効率化するWireframe Maker、PCとスマートフォンの表示を並べて確認できるResponsive Preview Labへと展開。自分が学習や制作の中で感じた不便を一つずつツールにしたものが、Aoi Toolsです。</p>
+          </div>
+
+          <div class="detail-section-bar"><h2 class="detail-section-bar-title">3つのツール</h2></div>
+          <p class="aoi-tools-tabs-hint">ツール名を選ぶと、画面と制作のポイントを切り替えられます。</p>
+          <div class="aoi-tools-tabs" role="tablist" aria-label="3つのツール">
+            <button class="aoi-tools-tab" id="tab-parts" type="button" role="tab" aria-selected="true" aria-controls="panel-parts">Webパーツ図鑑</button>
+            <button class="aoi-tools-tab" id="tab-wire" type="button" role="tab" aria-selected="false" aria-controls="panel-wire">Wireframe Maker</button>
+            <button class="aoi-tools-tab" id="tab-lab" type="button" role="tab" aria-selected="false" aria-controls="panel-lab"><span class="aoi-tools-tab-long">Responsive Preview Lab</span><span class="aoi-tools-tab-short">Preview Lab</span></button>
+          </div>
+          <div class="aoi-tools-panels">
+            <section class="aoi-tools-panel is-active" id="panel-parts" role="tabpanel" aria-labelledby="tab-parts" tabindex="0">
+              <img class="aoi-tools-screen" src="assets/img/aoi-tools/parts.webp" alt="Webパーツ図鑑の検索欄と、自然な言葉から探せる検索候補" width="1440" height="760" loading="lazy" decoding="async" />
+              <div class="aoi-tools-panel-copy"><h3>Webパーツ図鑑</h3><p>Web制作を学んでいた頃、専門用語の意味が分からないまま使うことが多かった経験から制作しました。名称だけを並べるのではなく、実際の見た目や動きを確認しながら、用途やコードまで理解できる形を目指しています。</p><ol class="aoi-tools-points"><li><span>01</span>名前を知らなくても探せる</li><li><span>02</span>見て・触って確認できる</li></ol><a class="aoi-tools-panel-link" href="https://aoi-web-parts-zukan.aoiroymgc.workers.dev/" target="_blank" rel="noopener noreferrer">Webパーツ図鑑を見る ↗</a></div>
+            </section>
+            <section class="aoi-tools-panel" id="panel-wire" role="tabpanel" aria-labelledby="tab-wire" tabindex="0">
+              <img class="aoi-tools-screen" src="assets/img/aoi-tools/wire.webp" alt="Wireframe Makerの編集画面。左に構成、中央にプレビュー、右に設定" width="1440" height="900" loading="lazy" decoding="async" />
+              <div class="aoi-tools-panel-copy"><h3>Wireframe Maker</h3><p>ワイヤーフレーム作成に毎回時間がかかっていたことから、よく使うHero、Features、FAQ、CTAなどをテンプレート化しました。色や装飾よりも、まずページ全体の構成を考えることに集中できるようにしています。</p><ol class="aoi-tools-points"><li><span>01</span>よく使う構成をテンプレート化</li><li><span>02</span>SVGで出力し、次のデザイン工程へつなげられる</li></ol><a class="aoi-tools-panel-link" href="https://aoi-web-wireframe.aoiroymgc.workers.dev/" target="_blank" rel="noopener noreferrer">Wireframe Makerを見る ↗</a></div>
+            </section>
+            <section class="aoi-tools-panel" id="panel-lab" role="tabpanel" aria-labelledby="tab-lab" tabindex="0">
+              <img class="aoi-tools-screen" src="assets/img/aoi-tools/lab.webp" alt="Responsive Preview Labで390pxと1440pxの2画面を並べて比較する様子" width="1440" height="1100" loading="lazy" decoding="async" />
+              <div class="aoi-tools-panel-copy"><h3>Responsive Preview Lab</h3><p>Webサイトを確認するとき、PC表示とスマートフォン表示を何度も切り替える手間を減らしたいと考えて制作しました。URLを一度入力するだけで、異なる画面幅を同時に確認できます。</p><ol class="aoi-tools-points"><li><span>01</span>PCとスマートフォンを同時に比較</li><li><span>02</span>必要な画面幅だけ追加できる</li></ol>
+                <div class="aoi-tools-improvement"><h4>使ってみて改善したこと</h4><div class="aoi-tools-before-after"><div><small>INITIAL</small><strong>6画面</strong><span>標準表示</span></div><span aria-hidden="true">→</span><div><small>CURRENT</small><strong>390px / 1440px</strong><span>標準表示・必要な幅だけ追加</span></div></div><p>当初は6画面を一度に表示する仕様でしたが、完成後に自分で使ってみると、基本的な用途ではPCとスマートフォンの2画面が最も比較しやすいと判断。初期表示を2画面に絞りました。</p></div>
+                <a class="aoi-tools-panel-link" href="https://responsive-preview-lab.aoiroymgc.workers.dev/" target="_blank" rel="noopener noreferrer">Responsive Preview Labを見る ↗</a>
+              </div>
+            </section>
+          </div>
+
+          <div class="detail-section-bar"><h2 class="detail-section-bar-title">AIを活用した制作</h2></div>
+          <div class="aoi-tools-copy"><p>制作では、まず自分の中にあるゴールをChatGPTとの対話で整理し、必要な機能や仕様を固めました。画面の完成イメージやデザインの方向性を決めた上でCodexで実装し、完成した画面を自分で確認しながら修正を重ねています。</p><p>AIにすべてを任せるのではなく、自分の考えを整理して形にし、デザインやUI・UXの知識と照らし合わせながら改善するためのツールとして活用しました。</p></div>
+          <div class="aoi-tools-flow">
+            <ol><li><small>考える</small><strong>自分</strong></li><li><small>整理する</small><strong>ChatGPT</strong></li><li><small>形にする</small><strong>Codex</strong></li><li><small>確認する</small><strong>自分</strong></li></ol>
+            <p>自分で確認 → 修正・改善 → 再度AIへ ↺</p>
+          </div>
+
+          <div class="detail-section-bar"><h2 class="detail-section-bar-title">Aoi Toolsとしてシリーズ化</h2></div>
+          <article class="detail-point aoi-tools-series">
+            <img class="detail-point-image" src="assets/img/aoi-tools/site.webp" alt="3つのWeb制作支援ツールを紹介するAoi Tools公式サイトのトップ画面" width="1440" height="900" loading="lazy" decoding="async" />
+            <div class="detail-point-body"><h3 class="detail-point-title">3つの道具を、ひとつの入口へ</h3><p>3つのツールは、それぞれ別の目的から制作を始めましたが、作っていく中でWeb制作の流れの中で使えるツールとして関連していることに気づきました。</p><p>個別のツールとして公開するだけでなく、まとめて見つけやすくするために「Aoi Tools」としてシリーズ化し、各ツールを紹介する専用サイトも制作しました。</p><a class="aoi-tools-panel-link" href="https://aoi-tools.aoiroymgc.workers.dev/" target="_blank" rel="noopener noreferrer">Aoi Toolsを見る ↗</a></div>
+          </article>
+
+          <div class="detail-section-bar"><h2 class="detail-section-bar-title">実際のツールを見る</h2></div>
+          <ul class="aoi-tools-link-list"><li><a href="https://aoi-web-parts-zukan.aoiroymgc.workers.dev/" target="_blank" rel="noopener noreferrer">Webパーツ図鑑 ↗</a></li><li><a href="https://aoi-web-wireframe.aoiroymgc.workers.dev/" target="_blank" rel="noopener noreferrer">Wireframe Maker ↗</a></li><li><a href="https://responsive-preview-lab.aoiroymgc.workers.dev/" target="_blank" rel="noopener noreferrer">Responsive Preview Lab ↗</a></li><li><a href="https://aoi-tools.aoiroymgc.workers.dev/" target="_blank" rel="noopener noreferrer">Aoi Tools ↗</a></li></ul>
+
+          <div class="detail-section-bar"><h2 class="detail-section-bar-title">他の作品を見る</h2></div>
+          <div class="detail-works-slider" hidden><button class="detail-works-arrow detail-works-arrow--left" type="button" aria-label="前へ"><span aria-hidden="true">‹</span></button><div class="detail-works-viewport" tabindex="0" aria-label="他の作品一覧（横スクロール）"><div class="detail-works-track"></div></div><button class="detail-works-arrow detail-works-arrow--right" type="button" aria-label="次へ"><span aria-hidden="true">›</span></button></div>
+          <div class="detail-navigation"><a href="index.html#works" class="detail-back-button">Works一覧へ</a></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-band footer-band--top"><div class="container footer-top-inner"><nav class="footer-nav" aria-label="フッターナビゲーション"><a href="index.html#about">About</a><a href="index.html#works">Works</a><a href="index.html#skills">Skill＆Tools</a><a href="index.html#contact">GitHub</a></nav></div></div><div class="footer-band footer-band--bottom"><div class="container footer-inner"><small class="copyright">© 2026 Aoi Yamaguchi. All Rights Reserved.</small></div></div></footer>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/aoi-tools.js" defer></script>
+  </body>
+</html>
