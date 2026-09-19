@@ -478,17 +478,18 @@ section#works {
 }
 
 .skill-design-icons {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(56px, 80px));
-  gap: clamp(16px, 4vw, 32px);
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: flex-start;
   padding: 0;
 }
 
 .skill-design-icons img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1;
+  flex: 0 0 72px;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
 }
 
 .tool-row {
@@ -514,16 +515,16 @@ section#works {
 .ai-tool h4,
 .workflow-list h4 {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .tool-icon-group {
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
 }
 
 .tool-icon-group img {
@@ -689,7 +690,7 @@ section#works {
 
 @media (max-width: 768px) {
   .header-inner { height: 64px; }
-  .brand-logo { width: 72px; height: 60px; }
+  .brand-logo { width: 64px; height: 48px; }
   .contact-inner h2 { font-size: 25px; }
   .contact-inner h2 br { display: none; }
   html {
@@ -881,7 +882,13 @@ section#works {
   }
 
   .skill-design-icons {
-    grid-template-columns: repeat(3, minmax(48px, 64px));
+    gap: 16px;
+  }
+
+  .skill-design-icons img {
+    flex-basis: 56px;
+    width: 56px;
+    height: 56px;
   }
 
   .tool-row {
@@ -926,7 +933,7 @@ section#works {
   }
 
   .skill-design-icons {
-    gap: 14px;
+    gap: 16px;
   }
 
   .other-card {
