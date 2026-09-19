@@ -14,7 +14,9 @@ Webデザイン・グラフィックと制作・業務でのAI活用をまとめ
 
 `style.css` は既存の基礎スタイル、`portfolio-polish.css` はブラッシュアップ用の追加スタイル、`syousai.css` は作品詳細専用です。追加スタイルはこの順で読み込みます。
 
-2026-09-20: 個人ブランドロゴとESA CREATE名刺の完成画像を差し替え、作品・ツールの優先順位を更新。画像原本はサイト外に保持し、Web用の派生画像のみを配置しています。公開は別途行います。
+2026-09-20: 個人ブランドロゴとESA CREATE名刺の完成画像を差し替え、作品・ツールの優先順位を更新。画像原本はサイト外に保持し、Web用の派生画像のみを配置しています。
+
+2026-09-20: Skill & Toolsの小型アイコンとDesign × AIの文章・余白を調整。追加SVGは[Simple Icons v16](https://github.com/simple-icons/simple-icons)と[Microsoft AdoptionのCopilotアイコン](https://adoption.microsoft.com/en-us/copilot/app/)を使用しています。
 
 ## ローカル確認
 
