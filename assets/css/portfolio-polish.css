@@ -510,6 +510,34 @@ section#works {
   color: var(--navy);
 }
 
+.tool-title,
+.ai-tool h4,
+.workflow-list h4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.tool-icon-group {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 5px;
+}
+
+.tool-icon-group img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.tool-icon-group--three img {
+  width: 30px;
+  height: 30px;
+}
+
 .tool-rule {
   background: var(--accent);
 }
@@ -599,16 +627,22 @@ section#works {
   line-height: 1.5;
 }
 
-.contact-inner > p:not(.contact-eyebrow) {
-  max-width: 70ch;
-  margin: 20px 0 28px;
+.contact-copy {
+  max-width: 100%;
+  margin-top: 22px;
   color: rgba(255, 255, 255, 0.82);
 }
 
-.design-ai-axes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 38px; }
+.contact-copy p { margin: 0; line-height: 1.85; }
+.contact-copy p + p { margin-top: 16px; }
+.keep-together { white-space: nowrap; }
+
+.design-ai-axes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 44px; }
 .design-ai-axes > div { border-top: 1px solid rgba(255,255,255,.5); padding-top: 16px; }
+.design-ai-axes > div:first-child { border-top-color: var(--accent); }
 .design-ai-axes h3 { margin: 0 0 6px; color: var(--accent-on-dark); font-size: 18px; }
 .design-ai-axes p { margin: 0; font-size: 14px; }
+.design-ai-axes .axis-note { margin-top: 10px; color: rgba(255,255,255,.7); }
 
 .contact-button {
   min-width: min(100%, 320px);
@@ -656,6 +690,8 @@ section#works {
 @media (max-width: 768px) {
   .header-inner { height: 64px; }
   .brand-logo { width: 72px; height: 60px; }
+  .contact-inner h2 { font-size: 25px; }
+  .contact-inner h2 br { display: none; }
   html {
     scroll-padding-top: 76px;
   }
