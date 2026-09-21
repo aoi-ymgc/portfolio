@@ -1,0 +1,10 @@
+.fuwatto-hitsuji-case .detail-point-image--mobile-capture {
+  width: min(100%, 220px);
+  justify-self: center;
+}
+
+@media (max-width: 768px) {
+  .fuwatto-hitsuji-case .detail-point-image--mobile-capture {
+    width: min(100%, 190px);
+  }
+}

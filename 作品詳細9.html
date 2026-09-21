@@ -22,13 +22,14 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/portfolio-polish.css" />
     <link rel="stylesheet" href="assets/css/syousai.css" />
+    <link rel="stylesheet" href="assets/css/fuwatto-hitsuji.css" />
     <style>
       .detail-hero-bg {
         background-image: url("assets/img/works9.webp");
       }
     </style>
   </head>
-  <body>
+  <body class="fuwatto-hitsuji-case">
     <a class="skip-link" href="#main-content">本文へスキップ</a>
     <header class="site-header">
       <div class="container header-inner">
@@ -83,7 +84,7 @@
           <div class="detail-summary-table detail-summary-table--no-top-border">
             <div class="table-row">
               <p class="table-header">プロジェクト概要</p>
-              <p class="table-data">自身が制作・展開するオリジナルキャラクター「ふわっとひつじ」の世界観や活動内容を伝える公式Webサイト。情報設計・ワイヤーフレーム・デザイン仕様策定から、Webデザイン、実装、公開まで一連の制作工程を担当しました。</p>
+              <p class="table-data">自身が制作・展開するオリジナルキャラクター「ふわっとひつじ」の世界観や活動内容を伝える公式Webサイト。情報設計・ワイヤーフレーム・デザイン仕様策定から、Webデザイン、実装、公開まで一連の制作工程を担当しました。FigmaでPC・スマートフォンのワイヤーフレームとUIの基礎設計を行い、実装しながら細部を調整しました。</p>
             </div>
             <div class="table-row">
               <p class="table-header">制作目的</p>
@@ -99,15 +100,19 @@
             </div>
             <div class="table-row">
               <p class="table-header">制作支援ツール</p>
-              <p class="table-data">企画・要件・デザイン・方向性の判断と最終確認は自身で担当。生成AI・Codexは、調査、情報整理、実装、確認を効率化するための制作支援ツールとして活用しました。</p>
+              <p class="table-data">HTML / CSSを中心に画面や内容を確認・調整し、Astro / TypeScriptを使用する実装ではCodexを活用しています。実装後はPC・スマートフォンそれぞれの表示や操作を確認し、必要に応じて修正しています。</p>
             </div>
             <div class="table-row">
-              <p class="table-header">使用技術</p>
+              <p class="table-header">デザイン・設計</p>
+              <p class="table-data">Figma（PC / SPワイヤーフレーム、UIの基礎設計）</p>
+            </div>
+            <div class="table-row">
+              <p class="table-header">技術構成</p>
               <p class="table-data">Astro / TypeScript / CSS</p>
             </div>
             <div class="table-row">
-              <p class="table-header">公開サイト</p>
-              <p class="table-data"><a href="https://fuwatto-hitsuji.aoiroymgc.workers.dev/" target="_blank" rel="noopener noreferrer">ふわっとひつじ 公式サイトを見る ↗</a></p>
+              <p class="table-header">公開環境</p>
+              <p class="table-data">Cloudflare Workers<br /><a href="https://fuwatto-hitsuji.aoiroymgc.workers.dev/" target="_blank" rel="noopener noreferrer">ふわっとひつじ 公式サイトを見る ↗</a></p>
             </div>
           </div>
 
@@ -123,7 +128,7 @@
               </div>
             </article>
             <article class="detail-point">
-              <img class="detail-point-image" src="assets/img/point9b.webp" alt="スマートフォン版の公式サイトのトップ画面" width="390" height="844" loading="lazy" decoding="async" />
+              <img class="detail-point-image detail-point-image--mobile-capture" src="assets/img/point9b.webp" alt="スマートフォン版の公式サイトのトップ画面" width="390" height="844" loading="lazy" decoding="async" />
               <div class="detail-point-body">
                 <h3 class="detail-point-title">スマートフォンでも、気になるコンテンツへ</h3>
                 <p>画面幅に合わせてレイアウトと文字の大きさを調整し、スマートフォンではナビゲーションを開閉式にしました。トップに絵文字・スタンプへのボタンを置き、絵文字は横に送って見比べられる構成に。フレンズはキャラクターを選ぶとプロフィールと関連スタンプが開き、Instagramへも迷わず進めるよう導線を設けました。</p>
