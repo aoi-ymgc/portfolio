@@ -875,6 +875,10 @@ section#works {
     font-size: 19px;
   }
 
+  .work-card--featured .work-content {
+    min-height: 380px;
+  }
+
   .work-card--business-card .work-thumb {
     padding: 24px;
   }
