@@ -313,7 +313,7 @@ section#works {
 }
 
 @media (min-width: 769px) {
-  .works-track > .work-card:last-child {
+  .works-track > .work-card:nth-child(odd):last-child {
     grid-column: 1 / -1;
     width: calc((100% - 28px) / 2);
     justify-self: center;
@@ -363,6 +363,7 @@ section#works {
 .work-card--compact .work-labels { margin-bottom: 16px; }
 .work-card--compact .work-thumb { object-fit: cover; }
 .works-track .work-card:nth-child(2) .work-thumb { object-fit: contain; background: #e9eef2; }
+.work-card--news .work-thumb { object-fit: contain; background: #f5f7fa; }
 
 .work-card {
   width: 100%;

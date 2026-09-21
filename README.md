@@ -4,8 +4,8 @@ Webデザイン・グラフィックと制作・業務でのAI活用をまとめ
 
 ## 構成
 
-- `index.html`: トップ、プロフィール、主要5作品とその他6作品、スキル・ツール、Design × AIのまとめ
-- `作品詳細1.html` ～ `作品詳細11.html`: 各制作事例の詳細
+- `index.html`: トップ、プロフィール、主要6作品とその他6作品、スキル・ツール、Design × AIのまとめ
+- `作品詳細1.html` ～ `作品詳細12.html`: 各制作事例の詳細
 - `assets/css/`: 共通・詳細ページのスタイル
 - `assets/js/`: ナビゲーションなどの操作
 - `assets/img/`: サイト内画像
@@ -17,6 +17,8 @@ Webデザイン・グラフィックと制作・業務でのAI活用をまとめ
 2026-09-20: 個人ブランドロゴとESA CREATE名刺の完成画像を差し替え、作品・ツールの優先順位を更新。画像原本はサイト外に保持し、Web用の派生画像のみを配置しています。
 
 2026-09-20: Skill & Toolsの小型アイコンとDesign × AIの文章・余白を調整。追加SVGは[Simple Icons v16](https://github.com/simple-icons/simple-icons)と[Microsoft AdoptionのCopilotアイコン](https://adoption.microsoft.com/en-us/copilot/app/)を使用しています。
+
+2026-09-22: 「デルミリオーレクラウドFUTSALスクール新聞」を主要制作実績に追加。公開用に最適化したWebPのみを `assets/img/futsal-school-news/` に配置し、原本PNGはリポジトリに含めていません。
 
 ## ローカル確認
 
