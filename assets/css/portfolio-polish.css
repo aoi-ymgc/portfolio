@@ -1028,3 +1028,9 @@ section#works {
 
 
 
+.work-card--match-pop .work-thumb {
+  box-sizing: border-box;
+  padding: clamp(12px, 2vw, 24px);
+  object-fit: contain;
+  background: #f5f7fa;
+}
