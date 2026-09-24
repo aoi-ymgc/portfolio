@@ -1,0 +1,58 @@
+.lien-case { background: #fff; }
+.lien-hero { padding: 36px 0 52px; background: #f5f7fa; }
+.lien-hero .breadcrumbs { margin-bottom: 28px; }
+.lien-title { max-width: 980px; margin: 0 auto 18px; color: var(--navy); font-size: clamp(30px, 4vw, 48px); line-height: 1.35; text-align: center; text-wrap: balance; }
+.lien-mobile-break { display: none; }
+.lien-lead { max-width: 810px; margin: 0 auto 32px; color: var(--text); font-size: 16px; line-height: 1.9; text-align: center; }
+.lien-hero-visual { width: min(100%, 1000px); margin: 0 auto; }
+.lien-hero-visual img, .lien-feature img, .lien-compare img { display: block; width: 100%; height: auto; border: 1px solid var(--border); background: #fff; }
+.lien-hero-visual img { border-radius: 4px; box-shadow: 0 10px 26px rgba(20, 35, 60, .12); }
+.lien-hero figcaption, .lien-feature figcaption, .lien-compare figcaption { margin-top: 10px; color: var(--text-light); font-size: 13px; line-height: 1.6; }
+.lien-hero figcaption { text-align: center; }
+.lien-case .detail-content { padding-top: 52px; }
+.lien-case .detail-summary-table { margin-bottom: 60px; }
+.lien-copy { max-width: 880px; margin: 0 auto 60px; }
+.lien-copy p, .lien-feature > p, .lien-design-points p, .lien-section-intro { margin: 0 0 16px; font-size: 15px; line-height: 1.9; }
+.lien-copy p:last-child, .lien-design-points p:last-child { margin-bottom: 0; }
+.lien-feature-list { max-width: 1000px; margin: 0 auto 64px; }
+.lien-feature { margin-bottom: 56px; }
+.lien-feature:last-child { margin-bottom: 0; }
+.lien-feature-heading { display: flex; align-items: baseline; gap: 16px; margin-bottom: 12px; }
+.lien-feature-heading span, .lien-design-points span { color: var(--accent-on-light); font: 700 16px Inter, sans-serif; }
+.lien-feature h3, .lien-design-points h3 { margin: 0; color: var(--navy); font-size: 22px; line-height: 1.5; }
+.lien-feature > p { max-width: 850px; }
+.lien-feature figure { max-width: 900px; margin: 24px 0 0; }
+.lien-feature img { background: #f5f7fa; }
+.lien-feature .lien-logo-visual { max-width: 680px; }
+.lien-feature .lien-logo-visual img { max-height: none; }
+.lien-design-points { display: grid; gap: 32px; max-width: 900px; margin: 0 auto 64px; }
+.lien-design-points article { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 16px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+.lien-design-points h3 { margin-bottom: 12px; font-size: 20px; }
+.lien-section-intro { max-width: 880px; margin: 0 auto 24px; }
+.lien-compare { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .65fr); align-items: start; gap: 24px; max-width: 1000px; margin: 0 auto 64px; }
+.lien-compare figure { min-width: 0; margin: 0; }
+.lien-compare img { max-height: 760px; object-fit: contain; object-position: top; background: #f5f7fa; }
+.lien-compare figcaption { color: var(--navy); font-weight: 700; text-align: center; }
+@media (max-width: 768px) {
+  .lien-hero { padding: 14px 0 36px; }
+  .lien-hero .breadcrumbs { margin-bottom: 20px; }
+  .lien-title { font-size: clamp(25px, 6.6vw, 30px); }
+  .lien-mobile-break { display: initial; }
+  .lien-lead { margin-bottom: 28px; font-size: 14px; text-align: left; }
+  .lien-hero figcaption, .lien-feature figcaption, .lien-compare figcaption { font-size: 12px; }
+  .lien-case .detail-content { padding-top: 32px; }
+  .lien-case .detail-summary-table { margin-bottom: 40px; }
+  .lien-copy { margin-bottom: 44px; }
+  .lien-copy p, .lien-feature > p, .lien-design-points p, .lien-section-intro { font-size: 14px; }
+  .lien-feature-list { margin-bottom: 48px; }
+  .lien-feature { margin-bottom: 42px; }
+  .lien-feature-heading { gap: 12px; }
+  .lien-feature h3 { font-size: 18px; }
+  .lien-feature figure { margin-top: 18px; }
+  .lien-design-points { gap: 24px; margin-bottom: 48px; }
+  .lien-design-points article { grid-template-columns: 26px minmax(0, 1fr); gap: 10px; padding-bottom: 20px; }
+  .lien-design-points h3 { font-size: 17px; }
+  .lien-compare { grid-template-columns: 1fr; gap: 28px; margin-bottom: 48px; }
+  .lien-compare img { max-height: none; }
+  .lien-compare figure:last-child { width: min(100%, 360px); margin: 0 auto; }
+}
