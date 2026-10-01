@@ -2,6 +2,8 @@
 
 Webデザイン・グラフィックと制作・業務でのAI活用をまとめた静的ポートフォリオサイトです。
 
+公開サイト: https://aoi-ymgc.github.io/portfolio/
+
 ## 構成
 
 - `index.html`: トップ、プロフィール、主要6作品とその他6作品、スキル・ツール、Design × AIのまとめ
