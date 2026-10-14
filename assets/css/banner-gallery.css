@@ -1,0 +1,43 @@
+.banner-case .banner-hero { padding: 0 0 36px; }
+.banner-case .breadcrumbs ul { flex-wrap: wrap; }
+.banner-case .banner-category { margin: 38px 0 12px; color: var(--muted); font-size: 14px; }
+.banner-case .banner-title { margin: 0 0 22px; color: var(--navy); font-size: clamp(26px, 3vw, 36px); line-height: 1.5; }
+.banner-case .banner-lead { max-width: 850px; margin: 0; line-height: 1.85; }
+.banner-case .banner-notice { margin: 24px 0 0; max-width: 900px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.banner-case .detail-content { padding-top: 0; }
+.banner-case .banner-summary { margin: 0; border-top: 1px solid var(--muted); }
+.banner-case .detail-section-bar { height: auto; min-height: 58px; padding: 12px 20px; text-align: center; }
+.banner-case .banner-series-number { margin: 0 0 12px; color: var(--accent-on-light, #c65300); font: 700 13px Inter, sans-serif; letter-spacing: .08em; }
+.banner-case .banner-intent { max-width: 850px; margin: 0 0 28px; line-height: 1.85; }
+.banner-case .banner-tabs { display: flex; flex-wrap: wrap; border-bottom: 1px solid var(--muted); }
+.banner-case .banner-tabs[hidden], .banner-case .banner-panel[hidden] { display: none; }
+.banner-case .banner-tab { min-height: 50px; padding: 12px 24px; border: 0; border-bottom: 3px solid transparent; background: #fff; color: var(--navy); font: inherit; cursor: pointer; }
+.banner-case .banner-tab[aria-selected="true"] { border-bottom-color: var(--accent); font-weight: 700; }
+.banner-case .banner-tab:hover { color: var(--accent-on-light, #c65300); }
+.banner-case .banner-panel { padding-top: 24px; }
+.banner-case .banner-size-label { margin: 0 0 18px; font-size: 14px; color: var(--muted); font-weight: 400; }
+.banner-case .banner-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; align-items: start; }
+.banner-case .banner-item { margin: 0; min-width: 0; }
+.banner-case .banner-image-link { display: block; cursor: zoom-in; border-radius: 6px; }
+.banner-case .banner-image-link img { width: 100%; height: auto; object-fit: contain; border: 1px solid #d7dee5; border-radius: 6px; }
+.banner-case .banner-item h4 { display: flex; gap: 10px; margin: 18px 0 10px; color: var(--navy); font-size: 16px; line-height: 1.6; }
+.banner-case .banner-variant-number { flex: none; color: var(--accent-on-light, #c65300); font-family: Inter, sans-serif; }
+.banner-case .banner-item p { margin: 0; font-size: 14px; line-height: 1.8; }
+.banner-case .banner-process { max-width: 850px; margin: 0 auto; line-height: 1.85; }
+.banner-case .banner-tab:focus-visible, .banner-case .banner-image-link:focus-visible, .banner-case .banner-dialog-close:focus-visible { outline: 3px solid var(--accent-on-light, #c65300); outline-offset: 4px; }
+.banner-case .banner-dialog { max-width: none; width: min(1280px, calc(100% - 32px)); max-height: calc(100dvh - 32px); padding: 0; border: 0; border-radius: 6px; color: var(--navy); background: white; overscroll-behavior: contain; }
+.banner-case .banner-dialog::backdrop { background: rgba(20, 35, 60, .8); }
+.banner-case .banner-dialog-content { padding: 16px; }
+.banner-case .banner-dialog-close { display: block; margin: 0 0 12px auto; min-height: 44px; min-width: 88px; padding: 8px 14px; border: 1px solid var(--muted); border-radius: 4px; background: white; color: var(--navy); font: inherit; cursor: pointer; }
+.banner-case .banner-dialog-image { width: 100%; height: min(70dvh, 900px); object-fit: contain; }
+.banner-case #banner-dialog-caption { margin: 12px 0 0; font-size: 14px; line-height: 1.6; }
+@media (max-width: 768px) {
+  .banner-case .banner-category { margin-top: 26px; }
+  .banner-case .detail-section-bar { margin-top: 48px; margin-bottom: 28px; }
+  .banner-case .detail-section-bar-title { font-size: 20px; }
+  .banner-case .banner-grid { grid-template-columns: 1fr; gap: 32px; }
+  .banner-case .banner-tab { padding-inline: 16px; font-size: 15px; }
+  .banner-case .banner-dialog { width: calc(100% - 20px); max-height: calc(100dvh - 20px); }
+  .banner-case .banner-dialog-content { padding: 12px; }
+  .banner-case .banner-dialog-image { height: 65dvh; }
+}
