@@ -1,4 +1,4 @@
-# YAMAGUCHI AOI Portfolio
+# A.Y. Portfolio
 
 Webデザイン・グラフィックと制作・業務でのAI活用をまとめた静的ポートフォリオサイトです。
 

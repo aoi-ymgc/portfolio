@@ -1034,3 +1034,36 @@ section#works {
   object-fit: contain;
   background: #f5f7fa;
 }
+
+/* Header monogram: preserve the original illustrated mark without the raster name. */
+.brand {
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+.brand-mark {
+  display: block;
+  width: 76px;
+  height: 67px;
+  overflow: hidden;
+}
+.brand-mark .brand-logo {
+  display: block;
+  width: 76px;
+  height: auto;
+  max-width: none;
+}
+.brand-initials {
+  color: #00565d;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.14em;
+}
+@media (max-width: 768px) {
+  .brand { gap: 1px; }
+  .brand-mark { width: 48px; height: 43px; }
+  .brand-mark .brand-logo { width: 48px; height: auto; }
+  .brand-initials { font-size: 9px; }
+}
