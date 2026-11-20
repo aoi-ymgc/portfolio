@@ -3,7 +3,7 @@
   --surface: #ffffff;
   --surface-soft: #f3f6f8;
   --border: #d7dee5;
-  --shadow: 0 16px 40px rgba(20, 35, 60, 0.1);
+  --shadow: 0 8px 20px rgba(20, 35, 60, 0.08);
   --accent-on-light: #c65300;
   --accent-on-dark: #ff9a52;
   --focus-ring: #d05b02;
@@ -116,10 +116,9 @@ body {
   max-width: 620px;
   padding: clamp(28px, 3.2vw, 40px);
   color: #ffffff;
-  background: rgba(34, 53, 85, 0.86);
-  border-left: 6px solid var(--accent);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(2px);
+  background: rgba(34, 53, 85, 0.93);
+  border-left: 4px solid var(--accent);
+  box-shadow: none;
 }
 
 .hero-eyebrow,
@@ -250,6 +249,27 @@ body {
   margin: 0 0 14px;
 }
 
+.about-process {
+  max-width: 52ch;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.about-process h3 {
+  margin: 0 0 10px;
+  color: var(--navy);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.about-process p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.85;
+}
+.portfolio-next { margin-top: 28px; }
+.work-card .work-description { max-width: 45ch; }
+.work-card .work-title, .work-card .work-description { text-wrap: pretty; }
+
 .strength-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -379,7 +399,7 @@ section#works {
   border: 1px solid var(--border);
   border-top: 6px solid var(--muted);
   border-radius: 6px;
-  box-shadow: 0 8px 28px rgba(20, 35, 60, 0.08);
+  box-shadow: none;
 }
 
 .work-card--featured {
@@ -438,7 +458,7 @@ section#works {
 }
 
 .work-title {
-  min-height: 3.1em;
+  min-height: 0;
   margin: 8px 0 12px;
   color: var(--navy);
   font-size: 18px;
@@ -449,13 +469,13 @@ section#works {
 }
 
 .work-card--featured .work-description {
-  min-height: 7em;
+  min-height: 0;
 }
 
 .work-description {
   display: block;
   flex-grow: 0;
-  min-height: 7em;
+  min-height: 0;
   margin-bottom: 18px;
   overflow: visible;
   font-size: 14px;
@@ -876,7 +896,7 @@ section#works {
   }
 
   .work-card--featured .work-content {
-    min-height: 380px;
+    min-height: 0;
   }
 
   .work-card--business-card .work-thumb {
