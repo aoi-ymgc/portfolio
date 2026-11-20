@@ -1054,3 +1054,24 @@ section#works {
   object-fit: contain;
   background: #f5f7fa;
 }
+
+/* Japanese line breaking: avoid stranded suffixes without forced <br> tags. */
+main p,
+main figcaption {
+  text-wrap: pretty;
+}
+
+main h2,
+main h3,
+main h4,
+.work-title,
+.detail-work-title {
+  text-wrap: balance;
+}
+
+.section-intro {
+  text-wrap: balance;
+  line-break: strict;
+}
+/* Let the hero introduction reflow naturally without a fixed desktop break. */
+.hero-lead { text-wrap: balance; }
