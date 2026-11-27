@@ -999,6 +999,8 @@ section#works {
 }
 
 @media (max-width: 480px) {
+  .hero-title-phrase { white-space: nowrap; }
+
   .hero-actions {
     grid-template-columns: 1fr;
   }
